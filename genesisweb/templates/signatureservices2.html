@@ -1,0 +1,228 @@
+{% extends 'baseAuxilliar.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Signature Services 2 {% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Signature Services</a></li>
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+
+#h3para{
+padding-top: 50px;
+
+font-size: 26px;
+}
+p.pfound2{
+font-size: 18px;
+line-height: 1.8;
+padding: 35px;
+}
+</style>
+
+<div class="bg-text">Signature Services</div>
+
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md bg-light text-dark text-center">
+        <h3 class="font-weight-bold" id="h3para">FOUNDATIONS</h3><br>
+        <p class="pfound2" align="right lead">
+            The Foundations Program constitutes Genesis Sober’s “core” treatment program and is effective for a wide
+            range of mental health challenges facing adolescents and young adults including anxiety, depression,
+            self-harm, personality disorder, family conflict, crisis, and developmental difficulties
+        </p>
+    </div>
+
+    <div class="col-md bg-light">
+    <style>
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="{% static 'images/imgcousel4.jpg' %}" alt="Photo" style="width:500px;height:350px;">
+            </div>
+            <div class="flip-box-back">
+                <h1>FOUNDATIONS</h1>
+                <h3>Our clinically-managed detox program focuses in helping clients overcome withdrawal
+                    symptoms efficiently as possible while prioritizing comfort and safety.</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" align="center">
+    <style>
+        h1{
+        padding: 45px;
+        font-size: 38px;
+        color: white;
+        }
+
+        .pfound{
+        padding-top: 40px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        h3{
+        font-family: Segoe UI;
+        font-size: 24px;
+        }
+
+    </style>
+    <div class="col-lg">
+        <h1>OUR APPROACH</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md bg-white">
+        <p class="pfound">Our multi-modal approach utilizes individual therapy, group therapy, family therapy, psychiatry
+            and case management to focus on key areas that we consider central to the mental health and
+            future well-being of our clients, including:</p><br>
+
+        <h3>Focus on the expression of emotion.</h3>
+        <p class="pfound">The Foundations Program encourages exploration and discussion of the full range of the client’s emotions.
+            The individual therapist helps the client describe and put words to feelings, including contradictory feelings,
+            feelings that are troubling or threatening and feelings that the client may not initially be able to recognize or acknowledge.</p><br>
+
+        <h3>Exploration of attempts to avoid distressing thoughts and feelings.</h3>
+        <p class="pfound">People do a great many things, knowingly and unknowingly, to avoid troubling experiences. This avoidance can
+        manifest in distressing symptoms and self-destructive behaviors. A client’s pattern of avoidance behavior inevitably
+        finds expression through interactions with therapists, staff, and other clients.  We make therapeutic use of these
+        real life experiences to actively focus on and explore attempts to avoid the issues most in need of attention.</p><br>
+
+        <h3>Identify recurring themes and patterns.</h3>
+        <p class="pfound">The client’s individual therapist will work to identify and explore recurring themes and patterns in the client’s
+            thoughts, feelings, self-concept, relationships, and life experiences. In some cases, a client may be acutely
+            aware of recurring patterns that are painful or self-defeating but feel unable to escape them. In other cases,
+            the client may be completely unaware of the patterns until the therapist helps them recognize and understand them.</p><br>
+
+        <h3>Discussion of past experience (developmental focus).</h3>
+        <p class="pfound">Related to the identification of recurring themes and patterns is the recognition that past experience, especially
+            early experiences of attachment figures, affects our relation to, and experience of, the present. The client’s
+            individual therapist assists the client in exploring early experiences, the relation between past and present,
+            and the ways in which the past tends to “live on” in the present. The focus is not on the past for its own sake,
+            but rather on how it can shed light on current psychological struggles.</p><br>
+
+        <h3>Emphasis on interpersonal relationships.</h3>
+        <p class="pfound">The Foundations Program places emphasis on the client’s relationships and interpersonal experiences.
+            Both adaptive and non-adaptive aspects of personality and self-concept are forged in the context of attachment
+            relationships, and psychological difficulties often arise when problematic interpersonal patterns interfere with
+            a person’s ability to meet their own social-emotional needs.
+            The goals of the Foundations Program include, but extend beyond, symptom remission. We believe successful treatment should
+            not only relieve symptoms but also foster a secure foundation from which to continue to develop psychological
+            strengths and resources. Depending on the individual and the circumstances, these might include the capacity
+            to have more fulfilling relationships, make more effective use of one’s talents and abilities, maintain a
+            realistically based sense of self-esteem, tolerate a broader range of emotion, understand self and others
+            in more nuanced and sophisticated ways, and face life’s challenges with greater flexibility and resilience.
+            Such ends are pursued through a rigorous process of self-reflection, self-exploration, and self-discovery that<br><br>
+            takes place in the context of a safe and nurturing environment.
+            Paul Muiruri, PhD is the director of the Foundations Program.</p>
+    </div>
+
+</div>
+
+<div class="row">
+    <style>
+        .btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+    </style>
+    <div class="col-md">
+        <p class="pfound">CONTACT US TO FIND MORE ABOUT OUR PROGRAM</p>
+        <a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a>
+    </div>
+
+</div>
+
+{% endblock %}

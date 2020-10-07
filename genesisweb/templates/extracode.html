@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Application{% endblock %}
+<title>Genesis Sober Community</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active">Code Testing</li>
+
+{% endblock %}
+
+{% block content %}
+
+<h2>TEST THE CODE HERE</h2>
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 260px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Payments</div>
+
+
+
+
+
+<style>
+body {margin:0;height:2000px;}
+
+.icon-bar {
+  position: fixed;
+  top: 78%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+
+
+<div class="container">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#contactus{
+background-image: url({% static 'images/carousel4.jpg' %});
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+#county{
+
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a051;
+  outline: 2px solid #45a049;
+  outline-offset: 2px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<h1 class="text-warning">CONTACT US</h1>
+
+<div class="container">
+  <form action="/action_page.php" id="contactus">
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input type="text" id="phonenum" name="phonenumber" placeholder="Phone Number">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <select id="county" name="county">
+        <option value="nairobi">Nairobi</option>
+        <option value="kiambu">Kiambu</option>
+        <option value="kisumu">Kisumu</option>
+        <option value="eldoret">Eldoret</option>
+        <option value="nyeri">Nyeri</option>
+        <option value="muranga">Muranga</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <textarea id="subject" name="subject" placeholder="How can we assist?" style="height:200px"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input type="text" id="aboutus" name="hearaboutus" placeholder="How did you hear about us?">
+    </div>
+  </div>
+
+  <div class="row">
+    <input type="submit" value="Send Message" id="send">
+  </div>
+
+  </form>
+
+    <style>
+div.background {
+  background:  url({% static 'images/carousel4.jpg' %});
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+  </div>
+
+</div>
+
+{% endblock %}

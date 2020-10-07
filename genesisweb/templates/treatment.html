@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Treatment {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Disbursement Details</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col">
+
+  </div>
+</div>
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Treatment</div>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'images/carousel1.jpg' %}" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'images/carousel2.jpg' %}" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'images/carousel3.jpg' %}" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+    {% endblock %}

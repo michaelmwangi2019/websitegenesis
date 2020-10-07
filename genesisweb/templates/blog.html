@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Blog {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Disbursement Details</a></li>
+
+{% endblock %}
+
+{% block content %}
+<h2> BLOG SPOT </h2>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("img_snow.jpg"); }
+.img2 { background-image: url("img_girl.jpg"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  border: 8px solid #f1f1f1;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+
+<img src="{% static 'images/carousel4.jpg' %}" class="img2">
+
+<div class="bg-text">BLOG</div>
+
+
+    {% endblock %}

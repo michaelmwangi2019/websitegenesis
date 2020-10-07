@@ -1,0 +1,398 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} About Us {% endblock %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">About Us</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align: center;
+padding-top: 28px;
+padding-left: 100px;
+padding-right:150px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>
+		<p class="para3">Genesis Sober is a refuge in a world stricken by addiction. For young men and women,
+			addiction can completely derail their lives and make it difficult to move forward.
+			When you learn about Genesis Sober, you’ll also discover a facility that’s ready to
+			guide young adults on a journey toward a happier and healthier life.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>ABOUT GENESIS SOBER</h2>
+		<P class="para3">Genesis Sober provides residential drug and alcohol recovery programs including detox and treatment,
+			as well as outpatient aftercare programs. Our homes are located in comfortable and serene settings
+			on the beautiful hills of Kiambu County. A key feature about Genesis Sober is that we offer services for both men and women. Our men’s and women's residential treatment center is located in Githunguri Springs.
+			Our mission is to help everyone who desires to become free from the chains of addiction.<font color="#01A9DB"> As the owners and staff of Genesis Sober,
+				we were once slaves to our addictions ourselves.</font> We have all found the freedom that comes with long-term, successful recovery.
+			Therefore, we want to show you how you can find that freedom too.
+			When you learn about Genesis Sober, you’ll understand that our vision is to see a positive impact in the lives of the people who
+			entrust us with their recovery. It is an honor for us to be of service in guiding others to happy, successful lives in long-term recovery.</P>
+			<img src="{% static 'images/logo/genesislogo2.jpg' %}" alt="Photo 1">
+		</div>
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>OUR HISTORY</h2>
+		<p class="para3">We created Genesis Sober to help people who want and need recovery. We believe that the cost of treatment should not be a barrier
+			to accessing treatment. Furthermore, we were fed up with turning away people who desperately wanted to find help, but were unable to
+			because they couldn’t afford it. We do not put a price on human life.
+			An aspect about Genesis Sober that sets us apart from other facilities is our location. We created our treatment centers in luxurious Kiambu County
+			highland homes <font color="#01A9DB">because we believe that comfort is essential to recovery.</font> Furthermore, these serene settings remove all distractions from
+			recovery and offer our clients a “sun-kissed” Kirigiti lifestyle.
+			Additionally, our compassionate and caring staff provides experienced, state-of-the-art, and proven treatment methods. Our desire is to see every one
+			of our guests come to experience all of the promises that successful, long-term recovery has to offer.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>FULLY LICENSED AND ACCREDITED DRUG AND ALCOHOL DETOX TREATMENT</h2>
+			<div class="col-3">
+				<img id="imgcert1" src="{% static 'images/logo/kcpa1.jpg' %}" alt="Certification Image">
+			</div>
+			<div class="col-9">
+				<p class="para3">
+					We are fully licensed and accredited by the State of Kiambu and the Joint Commission. Our caring and compassionate clinical
+					and support staff will make your stay comfortable and also help ensure your successful long-term recovery. When you come to Genesis Sober,
+					you’re joining a family that will encourage and support you throughout your journey.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+		<h2>BEGIN YOUR JOURNEY</h2>
+		<p class="para3">At Genesis Sober, we’re here to guide you on a journey to healing from addiction. Our caring and compassionate counselors
+			are ready to work with you to reach your goals. Furthermore, we treat people, not just disease. We’re experts at helping
+			you find and heal from the traumas that facilitate addiction and relapse. Some of the programs we offer include the following:<br>
+		  <ul class="d" style="font-size:16.5px;">
+		    <li>Comfort Detox</li>
+		    <li>Triple Diagnosis™</li>
+		    <li>Dual diagnosis treatment</li>
+		    <li>Intensive outpatient program</li>
+		    <li>Partial hospitalization program</li>
+		    <li>Substance abuse treatment</li>
+		  </ul>
+		</p><br>
+		<p class="para3">When you’re ready to begin your recovery journey, reach out to us. We’re available 24/7 to answer any questions you have about your recovery.
+		Call today at 0723-865-762 to learn more about Genesis Sober and how we can help you achieve a fulfilling and successful life.</p>
+		</div>
+		<hr>
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p align="ce"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<a href="{% url 'learnmore' %}"><button class="btn">Learn About MAT Now</button></a>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+<!--Special menu bar with animated Drop downs-->
+<div class="row">
+
+	<style>
+/* Animated menu bar in the About template*/
+
+  a{text-align:center}
+
+ol{margin:0;padding:0;list-style-type:none}
+
+.menu{
+	width:100%;
+	padding:0 16px;
+	display:block;
+	position:relative
+	}
+
+.menu > ol:first-child{
+	width:100%;
+	display:flex;
+	position:relative;
+	flex-flow:row wrap;
+	justify-content:center
+	}
+
+.menu-item{
+	width:150px;
+	position:relative;
+	perspective:100%;
+	cursor:pointer
+	}
+
+.menu-item a{
+	width:100%;
+	padding:16px 0;
+	display:block;
+	position:relative;
+	color:#fff;
+	border-radius:4px;
+	transition:all .5s ease;
+	transform-style:preserve-3d
+	}
+
+.menu-item a:before{
+	width:100%;
+	padding:16px 0;
+	display:block;
+	position:absolute;
+	color:#000;
+	border-radius:4px
+	}
+
+.menu > ol:first-child > .menu-item{display:block}
+
+.menu > ol:first-child > .menu-item > a
+	{background:#000;box-shadow:0 8px 6px -6px #595959}
+
+.menu > ol:first-child > .menu-item:nth-of-type(2) > a,
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a
+	{border-left:1px solid #fff;border-right:1px solid #fff}
+
+.menu > ol:first-child > .menu-item > a:before
+	{background:#ff9900;bottom:90%;transform:rotateX(-90deg) translate3d(0,0,75px)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(1) > a:before{content:"Home"}
+.menu > ol:first-child > .menu-item:nth-of-type(2) > a:before{content:"About"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > a:before{content:"Programs"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a:before{content:"Services"}
+.menu > ol:first-child > .menu-item:nth-of-type(5) > a:before{content:"Contact"}
+
+
+.menu > ol:first-child > .menu-item:nth-of-type(3) > a:after,
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a:after{
+	content:"\0025BE";
+	width:100%;
+	padding:30px 0 0 0;
+	top:0;
+	display:block;
+	position:absolute;
+	color:#fff;
+	font-size:20px;
+	text-align:center
+	}
+
+.menu > ol:first-child > .menu-item:hover > a{transform:rotateX(90deg)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(3):hover > a:after,
+.menu > ol:first-child > .menu-item:nth-of-type(4):hover > a:after
+	{content:"\0025B4";color:#000;transform:rotateX(-90deg) translate3d(0,0,75px)}
+
+.sub-menu{
+	background:#fff;
+	width:100%;
+	top:51px;
+	display:none;
+	position:absolute;
+	z-index:99;
+	border-top:1px solid #fff
+	}
+
+.sub-menu > .menu-item:nth-of-type(1){animation:fadein-down .5s .2s ease both}
+.sub-menu > .menu-item:nth-of-type(2){animation:fadein-down .7s .2s ease both}
+.sub-menu > .menu-item:nth-of-type(3){animation:fadein-down .9s .2s ease both}
+
+@keyframes fadein-down{
+	from{display:none;opacity:0;transform:translateY(-10px)}
+	to{display:block;opacity:1;transform:translateY(0)}
+	}
+
+.sub-menu > .menu-item > a{background:#008080}
+
+.sub-menu > .menu-item:nth-of-type(2) > a
+	{border-top:1px solid #fff;border-bottom:1px solid #fff}
+
+.sub-menu > .menu-item > a:before
+	{background:#bc003b;top:0}
+
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item > a:before{transform:rotateY(-90deg) translate3d(0,0,75px)}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(1) > a:before{content:"Drug & Alcohol"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(2) > a:before{content:"addiction Therapy"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(3) > a:before{content:"Residential"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:hover > a{transform:rotateY(90deg)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item > a:before{transform:rotateY(90deg) translate3d(0,0,75px)}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(1) > a:before{content:"Foundations"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(2) > a:before{content:"OCD & Anxiety"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(3) > a:before{content:"Trauma & Resiliency"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:hover > a{transform:rotateY(-90deg)}
+
+.menu > ol:first-child > .menu-item:hover > .sub-menu{display:block}
+
+@media screen and (min-width:321px) and (max-width:799px){
+	.menu{width:320px;margin:auto}
+	}
+
+@media (max-width:799px){
+	.menu > ol:first-child > .menu-item{width:100%}
+	.menu > ol:first-child > .menu-item > a{box-shadow:none}
+
+	.menu > ol:first-child > .menu-item:nth-of-type(2) > a,
+	.menu > ol:first-child > .menu-item:nth-of-type(4) > a
+		{border:1px solid #fff;border-left:none;border-right:none}
+
+	.sub-menu > .menu-item{margin:auto}
+	}
+
+	</style>
+
+<!--CSS formatting for the 3d navbar located in genesisofficial.css-->
+
+<div class="col-md-8">
+<nav class="menu">
+	<ol>
+		<li class="menu-item"><a href="{% url 'home' %}">Home</a></li>
+		<li class="menu-item"><a href="{% url 'aboutus' %}">About</a></li>
+		<li class="menu-item"><a href="#0">Treatment</a>
+			<ol class="sub-menu">
+				<li class="menu-item"><a href="#0">Drug and Alcohol Treatment</a></li>
+				<li class="menu-item"><a href="#0">Addiction Therapy Services</a></li>
+				<li class="menu-item"><a href="{% url 'tester' %}">Residential Treatment</a></li>
+			</ol>
+		</li>
+		<li class="menu-item"><a href="#0">Signature Services</a>
+			<ol class="sub-menu">
+				<li class="menu-item"><a href="{% url 'signatureservices2' %}">Foundations</a></li>
+				<li class="menu-item"><a href="{% url 'ocdanxiety' %}">OCD & Anxiety</a></li>
+				<li class="menu-item"><a href="{% url 'traumaresilience' %}">Trauma & Resiliency</a></li>
+			</ol>
+		</li>
+		<li class="menu-item"><a href="#0">Detox</a></li>
+
+	</ol>
+</nav>
+		<p>This is sample text to give room for the animated drop-down menu</p>
+		<p>This is sample text to give room for the animated drop-down menu</p>
+		<p>This is sample text to give room for the animated drop-down menu</p>
+		<p>This is sample text to give room for the animated drop-down menu</p>
+		<p>This is sample text to give room for the animated drop-down menu</p>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-lg">
+
+	</div>
+</div>
+
+    {% endblock %}

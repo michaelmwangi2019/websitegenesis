@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Learn More{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'aboutus' %}">Learn More</a></li>
+
+{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md bg-white">
+<h1 id="h1learn">LEARN MORE ABOUT GENESIS SOBER</h1><br><br><br>
+	</div>
+</div>
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Learn More</div>
+
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+#h1learn{
+padding-top: 50px;
+padding-bottom: -5px;
+padding-left: 150px;
+}
+p.para3{
+margin: auto;
+text-align: center;
+padding-top: 35px;
+padding-left: 100px;
+padding-right:150px;
+align-self:center;
+pointer-events: auto;
+font-size: 15px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 5px;
+padding-left: 20px;
+font-size: 20px;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>
+		<p class="para3">Genesis Sober is a refuge in a world stricken by addiction. For young men and women,
+			addiction can completely derail their lives and make it difficult to move forward.
+			When you learn about Genesis Sober, you’ll also discover a facility that’s ready to
+			guide young adults on a journey toward a happier and healthier life.</p>
+		</div>
+		<hr>
+		<div class="row text-center">
+		<h2>ABOUT GENESIS SOBER</h2>
+		<P class="para3">Genesis Sober provides residential drug and alcohol recovery programs including detox and treatment,
+			as well as outpatient aftercare programs. Our homes are located in comfortable and serene settings
+			on the beautiful hills of Kiambu County. A key feature about Genesis Sober is that we offer services for both men and women. Our men’s and women's residential treatment center is located in Githunguri Springs.
+			Our mission is to help everyone who desires to become free from the chains of addiction.<font color="#01A9DB"> As the owners and staff of Genesis Sober,
+				we were once slaves to our addictions ourselves.</font> We have all found the freedom that comes with long-term, successful recovery.
+			Therefore, we want to show you how you can find that freedom too.
+			When you learn about Genesis Sober, you’ll understand that our vision is to see a positive impact in the lives of the people who
+			entrust us with their recovery. It is an honor for us to be of service in guiding others to happy, successful lives in long-term recovery.</P>
+			<img src="{% static 'images/logo/genesislogo2.jpg' %}" alt="Photo 1">
+		</div>
+
+		<div class="row"></div>
+		<hr>
+		<div class="row text-center">
+		<h2>OUR HISTORY</h2>
+		<p class="para3">We created Genesis Sober to help people who want and need recovery. We believe that the cost of treatment should not be a barrier
+			to accessing treatment. Furthermore, we were fed up with turning away people who desperately wanted to find help, but were unable to
+			because they couldn’t afford it. We do not put a price on human life.
+			An aspect about Genesis Sober that sets us apart from other facilities is our location. We created our treatment centers in luxurious Kiambu County
+			highland homes <font color="#01A9DB">because we believe that comfort is essential to recovery.</font> Furthermore, these serene settings remove all distractions from
+			recovery and offer our clients a “sun-kissed” Kirigiti lifestyle.
+			Additionally, our compassionate and caring staff provides experienced, state-of-the-art, and proven treatment methods. Our desire is to see every one
+			of our guests come to experience all of the promises that successful, long-term recovery has to offer.</p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>FULLY LICENSED AND ACCREDITED DRUG AND ALCOHOL DETOX TREATMENT</h2>
+			<div class="col-3">
+				<img id="imgcert1" src="{% static 'images/logo/imgcert1.png' %}" alt="Certification Image">
+			</div>
+			<div class="col-9">
+				<p class="para3">
+
+					We are fully licensed and accredited by the County of Kiambu and the Joint Commission. Our caring and compassionate clinical
+					and support staff will make your stay comfortable and also help ensure your successful long-term recovery. When you come to Genesis Sober,
+					you’re joining a family that will encourage and support you throughout your journey.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+		<h2>BEGIN YOUR JOURNEY</h2>
+		<p class="para3">At Genesis Sober, we’re here to guide you on a journey to healing from addiction. Our caring and compassionate counselors
+			are ready to work with you to reach your goals. Furthermore, we treat people, not just disease. We’re experts at helping
+			you find and heal from the traumas that facilitate addiction and relapse. Some of the programs we offer include the following:<br>
+		  <ul class="d">
+		    <li>Comfort Detox</li>
+		    <li>Triple Diagnosis™</li>
+		    <li>Dual diagnosis treatment</li>
+		    <li>Intensive outpatient program</li>
+		    <li>Partial hospitalization program</li>
+		    <li>Substance abuse treatment</li>
+		  </ul>
+		</p><br>
+		<p class="para3">When you’re ready to begin your recovery journey, reach out to us. We’re available 24/7 to answer any questions you have about your recovery.
+		Call today at 0723-865-762 to learn more about Genesis Sober and how we can help you achieve a fulfilling and successful life.</p>
+		</div>
+		<hr>
+	</div>
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p align="ce"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<a href="{% url 'learnmore' %}"><button class="btn">Learn About MAT Now</button></a>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert9.gif' %}" style="width:250px; height:800px;" align="center"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-lg">
+
+	</div>
+</div>
+    {% endblock %}
+

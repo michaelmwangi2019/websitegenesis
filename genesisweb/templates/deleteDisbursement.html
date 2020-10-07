@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}
+{% load crispy_forms_tags %}
+<li class="breadcrumb-item active">Delete Disbursements </li>
+{% endblock %}
+
+{% block content %}
+
+ <form method = "post">
+     {% csrf_token %}
+     {form|crispy}
+     <p> Are you sure you want to delete "{{ object }}" ?</p>
+     <input type="submit" value="Submit"/>
+ </form>
+
+{% endblock %}
+

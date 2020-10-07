@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} OCD & ANXIETY {% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">OCD &Anxiety</a></li>
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+
+#h3para{
+padding-top: 50px;
+
+font-size: 26px;
+}
+.pfound2{
+font-size: 18px;
+line-height: 1.8;
+padding-bottom: 30px;
+padding-top: 15px;
+}
+
+.divocd{
+padding-left: 60px;
+padding-right: 70px;
+}
+
+</style>
+
+<div class="bg-text">Signature Services</div>
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md bg-light text-dark text-center">
+        <h3 class="font-weight-bold" id="h3para">OCD <font color="#01A9DB">&</font> ANXIETY</h3><br>
+        <p class="pfound2" align="right lead">
+            The Genesis Sober treatment program for OCD and related disorders was developed with the understanding that
+            OCD is a complex, multidimensional condition that looks different in every sufferer. As a result, treatment
+            must be tailored to the specific features of each person’s disorder, the consequences they have on their lives,
+            and the presence of co-occurring conditions that often accompany OCD.
+        </p>
+    </div>
+
+    <div class="col-md bg-light">
+    <style>
+.flip-box {
+  background-color: transparent;
+  width: 680px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="{% static 'images/imgmeditation.jpg' %}" alt="Photo" style="width:680px;height:350px;">
+            </div>
+            <div class="flip-box-back">
+                <h1>OCD & ANXIETY</h1>
+                <h3>Our clinically-managed detox program focuses in helping clients overcome withdrawal
+                    symptoms efficiently as possible while prioritizing comfort and safety.</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" align="center">
+    <style>
+        h1{
+        padding: 45px;
+        font-size: 38px;
+        color: white;
+        }
+
+        .pfound{
+        padding-top: 40px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        h3{
+        font-family: Segoe UI;
+        font-size: 24px;
+        }
+
+
+    </style>
+    <div class="col-lg">
+        <h1>OUR APPROACH</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md bg-white divocd">
+        <p class="pfound">OCD is a debilitating condition that consists of irrational or excessive fears and concerns that
+            become obsessive and manifest as intrusive, unwanted, disturbing thoughts, images or impulses. These obsessions
+            are accompanied by repetitive and time-consuming mental and behavioral acts called rituals or compulsions that
+            are done to prevent bad things associated with the obsessions from happening. Avoidance is the third component of OCD,
+            which involves deliberately staying away from things, people and places that trigger or worsen obsessive fears and concerns,
+            or to avoid the risk of some dreaded event.<br><br>
+
+            At Genesis Sober <font color="#01A9DB" style="cursor: pointer;">we conduct a thorough assessment to determine the severity</font> of a person’s OCD using
+            the Yale-Brown Obsessive Compulsive Scale. We then formulate a treatment plan using exposure and response prevention (ERP)
+            as the main therapy for OCD. ERP is considered the gold standard treatment for OCD and has been shown by research to be
+            the most effective treatment for the disorder. ERP works by helping people with OCD learn to tolerate the distress
+            associated with their intrusive thoughts while refraining from engaging in the compulsions that are a part of their OCD.</p><br>
+    </div>
+</div>
+
+<style>
+ul.a{
+list-style-type: square;
+font-size: 15px;
+font-family: Segoe UI;
+padding-bottom: 50px;
+}
+ul.b{
+list-style-type: circle;
+padding-top: 10px;
+}
+ul.c{
+list-style-type: circle;
+}
+
+.pfound2-2{
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+.pfound2-4{
+        padding-top: 15px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+.pfound2-40{
+        padding-top: 5px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+.divobsession{
+padding-left: 60px;
+}
+
+.divcompulsion{
+padding-right: 60px;
+}
+
+</style>
+<div class="row">
+
+    <div class="col-md bg-white justify-center divobsession">
+        <h3><font color="#01A9DB" style="cursor: pointer;">Common Obsessions in OCD</font></h3>
+        <ul class="c">
+            <li><p class="pfound2-4">Fear of getting sick or getting other people sick by coming in contact with germs that carry illness or disease</p></li>
+            <li><p class="pfound2-4">Fear of having an illness or a disease without knowing it</p></li>
+            <li><p class="pfound2-4">Fear of impulsively harming oneself or others</p></li>
+            <li><p class="pfound2-4">Fear of being responsible for harming others</p></li>
+            <li><p class="pfound2-4">Fear of being responsible for harming others</p></li>
+            <li><p class="pfound2-4">Fear of being responsible for something bad happening</p></li>
+            <li><p class="pfound2-4">Fear of making mistakes or not doing things “just right”</p></li>
+            <li><p class="pfound2-4">Fear of losing or forgetting important things or information</p></li>
+            <li><p class="pfound2-4">Concerns about things being tidy, even, or exact</p></li>
+            <li><p class="pfound2-4">Fear of offending God or committing blasphemy</p></li>
+            <li><p class="pfound2-4">Excessive concerns with what’s morally right and wrong</p></li>
+            <li><p class="pfound2-4">Fear of being or becoming a pedophile despite evidence to the contrary</p></li>
+            <li><p class="pfound2-4">Obsessions about homosexuality and concerns that one might become gay</p></li>
+            <li><p class="pfound2-4">Obsessions about being or becoming sexually aggressive toward others</p></li>
+            <li><p class="pfound2-4">Superstitious fears about lucky/unlucky numbers</p></li>
+        </ul>
+    </div>
+    <div class="col-md bg-white justify-center divcompulsion">
+        <h3><font color="#01A9DB" style="cursor: pointer;">Common Compulsions in OCD</font></h3>
+        <ul class="b">
+            <li><p class="pfound2-40">Excessive hand washing, showering, bathing, tooth brushing and grooming</p><br></li>
+            <li><p class="pfound2-40">Excessive cleaning or washing of household items or personal clothing</p><br></li>
+            <li><p class="pfound2-40">Checking that doors are locked, stove and other home appliances are turned off</p><br></li>
+            <li><p class="pfound2-40">Checking your body for signs of illness or disease</p><br></li>
+            <li><p class="pfound2-40">Checking that you did not make a mistake</p><br></li>
+            <li><p class="pfound2-40">Checking that you did not harm yourself or others</p><br></li>
+            <li><p class="pfound2-40">Repeating activities or actions until it “feels right”</p><br></li>
+            <li><p class="pfound2-40">Repeating activities or actions to achieve perfection, symmetry or exactness</p><br></li>
+            <li><p class="pfound2-40">Praying to prevent harm to others or oneself</p><br></li>
+            <li><p class="pfound2-40">Reviewing mentally past events to make sure no harm was done</p><br></li>
+            <li><p class="pfound2-40">Counting while doing routine activities in order to end them on a good, safe or right number</p><br></li>
+            <li><p class="pfound2-40">Trying to mentally erase or undo bad thoughts</p><br></li>
+            <li><p class="pfound2-40">Seeking reassurance from others</p><br></li>
+        </ul>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col bg-white">
+        <h3><font color="#01A9DB">Anxiety Disorders</font></h3>
+        <p class="pfound2-2" align="right lead">
+            In addition, there is a group of anxiety disorders that respond to exposure and other CBT approaches that
+            are effective for OCD and related disorders. At Community West we treat the following anxiety disorders
+            with cognitive-behavioral interventions:
+        <ul class="a">
+                <li>Social Anxiety Disorder</li>
+                <li>School Avoidance or Refusal</li>
+                <li>Panic Disorder</li>
+                <li>Specific Phobias</li>
+                <li>Agoraphobia</li>
+                <li>Separation Anxiety Disorder</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<!--columns common obsessions and compulsions on OCD-->
+    <style>
+        .btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  float: right;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+    </style>
+<div class="row container-fluid">
+    <div class="col-md-6">
+        <p class="pfound">CONTACT US TO FIND MORE ABOUT OUR PROGRAM</p
+    </div>
+    <div class="col-md-6">
+        <a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a>
+    </div>
+
+</div>
+
+{% endblock %}

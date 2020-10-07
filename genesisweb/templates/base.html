@@ -1,0 +1,640 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<head>
+    <title>Genesis Sober Community</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--mobile first library-->
+
+<!--Libraries-->
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+     <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<!--extra Bootstrap libraries for javascript-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+<!--favicon for the website-->
+<link rel="icon" href="{% static 'images/logo/favicon2.jpg' %}" type="image/gif" sizes="16x16">
+<link href="https://www.Beaconhouse.org/wp-content/uploads/2018/09/Beacon-House-logo-Favicon-16-1.png" rel="icon" type="image/png" sizes="16x16">
+<link href="https://www.Beaconhouse.org/wp-content/uploads/2018/09/Beacon-House-logo-Favicon-32-1.png" rel="icon" type="image/png" sizes="32x32">
+
+    <!--Bootstrap Icons Library-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootrap.min.css"/>
+
+    <!--Font Awesome Icons Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome/764c7e9806."></script>
+
+    <!--Adding Icons to Links-->
+    <link rel="stylesheet" href="https://fonts.google.com/icon?family=Material+Icons"/>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--The filtering function-->
+<script>
+	$(document).ready(function() {
+ 	 $("#FilterInput").on("keyup", function() { var value = $(this).val().toLowerCase();
+	 $("#ApplicantsTable tr").filter(function() {
+	 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });});});
+</script>
+
+<!--CSS formatting Links-->
+<link href="{% static 'css/genesis.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/genesisofficial.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'javascript/css3-animate-it.js' %}" rel="stylesheet" type="text/javascript">
+<!--------<link href="{% static 'genesisjavascript.js' %}" rel="stylesheet" type="text/javascript">------->
+    
+<!--sticky nav vbar-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body class="bg-info"><!--Background color for base-->
+
+<div class="row-mx-auto container-fluid"><img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%"></div>
+
+<style type="text/css">
+.navbar a:hover {
+ background-color: #298A08;
+ font-size: 15px;
+}
+
+li.nav-item {
+list-style-position: outside;
+overflow: hidden;
+border-right: 1px solid #bbb;
+}
+
+</style>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo/genesislogo3.jpg' %}" class="mx-auto rounded"></a>
+  <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">&nbsp;HOME &nbsp;</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}">&nbsp;ABOUT US &nbsp;</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices' %}">&nbsp;SIGNATURE SERVICES &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'treatment' %}">&nbsp;TREATMENT &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'eatingdisorder' %}">&nbsp;EATING DISORDER TREATMENT &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'detox' %}">&nbsp;DETOX &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'locations' %}">&nbsp;LOCATIONS &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">&nbsp;LIFE SKILLS &nbsp;&nbsp; &nbsp;</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">&nbsp;CONTACT US &nbsp;&nbsp; </a></li>
+
+      <li class="nav-item"><a class="nav-link" href="{% url 'applicant' %}"> &nbsp;ADMISSION &nbsp;  </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'disbursement' %}"> &nbsp;DISBURSEMENT &nbsp; </a></li>
+       <li class="nav-item"><a class="nav-link" href="{% url 'tester' %}"> &nbsp;Code Tester &nbsp;  </a></li>
+       <li class="nav-item"><a class="nav-link" href="{% url 'extracode' %}"> &nbsp;PAYMENTS &nbsp;  </a></li>
+       <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices2' %}">   1    </a></li>
+       <li class="nav-item"><a class="nav-link" href="{% url 'traumaresilience' %}">   2    </a></li>
+       <li class="nav-item"><a class="nav-link" href="{% url 'ocdanxiety' %}">&nbsp; &nbsp;3&nbsp; &nbsp;</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">&nbsp; &nbsp;GALLERY&nbsp; &nbsp;</a></li>
+  </ul>
+
+</nav>
+<hr class="new1">
+
+<div class="container-fluid" id="containerfluid">
+    <style type="text/css">
+.button {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  border: solid 2px;
+  border-color: white;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 200px;
+  font-size: 12px;
+}
+
+.button:hover {
+  background-color: #01A9DB;
+  color: white;
+  font-size: 14px;
+}
+</style>
+
+<button class="button font-weight-bold">(+254) 723-865-762</button>
+
+</div>
+
+        <!-- SOCIAL MEDIA ICONS -->
+<div class="container-fluid socialmedia">
+    <div class="row">
+        <div class="col-lg-1 bg-white">
+    <div class="row">
+        <style>
+body {margin:0;height:2000px;}
+
+.icon-bar {
+ position: fixed;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+        </style>
+
+        <div class="icon-bar socialmed">
+            <a href="#" target="_blank"><img alt="Facebook" src="{% static 'images/icons/Facebook_Icon.png' %}" style="width:60px; height:60px;"></a>
+            <a href="#" target="_blank"><img alt="Twitter" src="{% static 'images/icons/Twitter_Icon.png' %}" style="width:60px; height:60px;"></a>
+            <a href="#" target="_blank"><img alt="Instagram" src="{% static 'images/icons/Instagram_Icon.png' %}" style="width:60px; height:60px;"></a>
+            <a href="#" target="_blank"><img alt="Linkedin" src="{% static 'images/icons/Linkedin_Icon.png' %}" style="width:60px; height:60px;"></a>
+            <a href="#" target="_blank"><img alt="YouTube" src="{% static 'images/icons/YouTube_Icon.png' %}" style="width:60px; height:60px;"></a>
+        </div>
+    </div>
+  </div>
+                <div class="col-lg-11">
+                     {% block content %}
+
+                     {% endblock %}
+                 </div>
+                <!--<div class="col-lg-1">right column</div>-->
+             </div>
+         </div>
+
+
+
+</body>
+
+
+<!--******PARALLAX******-->
+
+<div class="row">
+<div class="container-fluid">
+
+    <style type="text/css">
+    .parallax {
+    background-attachment: fixed;
+    opacity: 0.4;
+    height: 550px;
+}
+#parallax1 {
+    background-image: url("{% static 'images/carousel22.jpg' %}");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.parallax-content {
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    vertical-align:middle;
+    text-align:center;
+    height: 400px;
+}
+
+.parallax-content #p1{
+    font-size: 45px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
+    font-family: Candara Light;
+    text-decoration: none;
+    padding-top: 160px;
+    font-weight: 900;
+}
+
+.parallax-content #p2{
+    font-size: 20px;
+    padding-bottom: 35px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
+    font-family: HP Simplified Light;
+    text-decoration: none;
+
+    }
+    </style>
+
+<div class="parallax" id="parallax1">
+  <div class="parallax-content slideLeft">
+      <p id="p1">THE RECOVERY JOURNEY IS NOT ONE <br> <font color="#00FFFF" font-weight="bold">YOU HAVE TO TAKE ALONE</font></p>
+      <p id="p2">Begin Living a Life Of Purpose By Contacting Genesis Sober Today</p>
+      <button class="button font-weight-bold">(+254)720-884024</button>
+
+</div>
+
+</div>
+
+<br>
+
+<footer>
+
+ <!--<style>
+  .parallax {
+  /* The image used */
+  background-image: url({% static 'images/carousel4.jpg' %});
+  opacity: 0.6;
+  /* Full height */
+  height: 35%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+</style>
+
+<div class="parallax"></div>-->
+
+
+
+
+
+
+<!--******* CONTACT US FORM  *********-->
+
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bg-dark"></div>
+            <div class="col-md-6 bg-dark"></div>
+        </div>
+    </div>
+
+
+<div class="container"><!--this is the container in which the form is placed-->
+    <div class="row">
+    <div class="col-md">
+
+<style type="text/css">
+* {
+
+  box-sizing: border-box;
+}
+
+#contactus{
+background-image: url({% static 'images/contactus01.jpg' %});
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+#county{
+
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a051;
+  outline: 2px solid #45a049;
+  outline-offset: 2px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two
+ columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<h1 class="font-weight-bold text-info">CONTACT US</h1>
+
+<div class="container">
+
+  <form action="/action_page.php" id="contactus">
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input style="font-size:15px;" type="text" id="fname" name="firstname" placeholder="Your Name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input style="font-size:15px;" type="text" id="phonenum" name="phonenumber" placeholder="Phone Number">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px; font-size: 15px;">
+      <select id="county" name="county">
+        <option value="nairobi">Nairobi</option>
+        <option value="kiambu">Kiambu</option>
+        <option value="kisumu">Kisumu</option>
+        <option value="eldoret">Eldoret</option>
+        <option value="nyeri">Nyeri</option>
+        <option value="muranga">Muranga</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <textarea id="subject" name="subject" placeholder="How can we assist?" style="height:200px; font-size: 15px;"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75 shadow-lg p-6 mb-3 text-body" style="width: 500px;">
+      <input style="font-size:15px;" type="text" id="hearus" name="hearaboutus" placeholder="How did you hear about us?">
+    </div>
+  </div>
+
+  <div class="row">
+    <input style="font-size:15px;" type="submit" value="Send Message" id="send">
+  </div>
+
+  </form>
+
+  </div>
+    </div>
+</div>
+</div>
+
+<br>
+    <br>
+
+    <!-- Footer Elements -->
+
+   <div class="container">
+       <div class="row bg-info">
+           <div class="col-lg-4" style="background: #01A9DB; padding-top:20px;">
+               <h3><u>Our Contacts</u></h3>
+               <p style="font-size:19px;">+254-720-884024</p>
+               <p style="font-size:19px;">+254-202500061</p>
+               <p style="font-size:19px;"><a href="#"><style class="color: white">info@genesissober.org</style></a></p>
+               <p style="font-size:19px;">info@genesissober.org</p>
+           </div>
+
+            <div class="col-lg-4" style="background: #A4A4A4;">
+                <H3><u>Working Hours (Enquiries)</u></H3>
+                <p style="font-size:19px;">Mon - Fri 7:00 Am - 6:30 Pm</p>
+                <p style="font-size:19px;">Sat & Public Holidays, 7:00 Am - 6:30 Pm</p>
+                <img src="{% static 'images/logo/genesislogo3.jpg' %}">
+            </div>
+           <div class="col-lg-4" style="background: #01A9DB; padding-top: 20px;">
+               <h3><u>Genesis Sober</u></h3>
+               <p style="font-size:19px;">P.O.Box 28656</p>
+               <p style="font-size:19px;">00200 - Githunguri</p>
+               <p style="font-size:19px;">Kiambu, Kenya.</p>
+           </div>
+       </div>
+   </div>
+
+
+<div class="row">
+    <div class="col-4"></div>
+<div class="col-8 footer-bottom-bottom">
+<p>©2019 All Rights Reserved | Genesis Sober Community Center</p>
+
+</div>
+<!-- Add font awesome icons -->
+<div class=" col footer-copyright text-center"></div>
+
+</div>
+
+</footer>
+</div>
+</div>
+
+
+
+
+ <div class="row">
+    <div class="col-sm">
+<!--Button to scroll to the top-->
+
+    <style>
+
+#myBtnup {
+  display: none;
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtnup:hover {
+  background-color: #555;
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtnup" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtnup");
+var mytextarea = document.getElementById("mytext");
+
+var myanimation = document.getElementById("soberexp");
+var myanimation2 = document.getElementById("imagesoberexp");
+var myanimation3 = document.getElementById("titlesoberexp");
+
+var myanimation4 = document.getElementById("aboutsoberpara");
+var myanimation5 = document.getElementById("aboutsoberimage");
+var myanimation6 = document.getElementById("titleaboutsober");
+
+var myanimation7 = document.getElementById("soberprogrampara");
+var myanimation8 = document.getElementById("soberprogramimage");
+var myanimation9 = document.getElementById("titlesoberprograms");
+
+var myanimation10 = document.getElementById("directorpara");
+var myanimation11 = document.getElementById("directorimage");
+var myanimation12 = document.getElementById("titledirector");
+
+// When the user scrolls down 450px from the top of the document, show the button
+window.onscroll = function() {scrollFunction2(),scrollFunction(),scrollFunction3(),scrollFunction4(),scrollFunction5()};
+
+function scrollFunction() {
+
+  if (document.body.scrollTop >= 450 || document.documentElement.scrollTop >= 450){
+    mybutton.style.display = "block";
+    mytextarea.style.display = "none";
+    }
+   else {
+    mybutton.style.display = "none";
+    mytextarea.style.display = "block";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function scrollFunction2() {
+  if (document.body.scrollTop >= 150 || document.documentElement.scrollTop >= 150){
+    myanimation.className = "slide-up-fade-in";
+    myanimation2.className = "slideLeft";
+    myanimation3.className = "slideRightLeft";
+  }
+  else {
+    myanimation.className = "";
+    myanimation2.className = "";
+    myanimation3.className = "";
+  }
+  }
+
+  function scrollFunction3() {
+  if (document.body.scrollTop >= 850 || document.documentElement.scrollTop >= 850){
+    myanimation4.className = "slide-up-fade-in";
+    myanimation5.className = "slideLeft";
+    myanimation6.className = "slideRightLeft";
+  }
+  else {
+    myanimation4.className = "";
+    myanimation5.className = "";
+    myanimation6.className = "";
+  }
+  }
+
+  function scrollFunction4() {
+  if (document.body.scrollTop >= 1600 || document.documentElement.scrollTop >= 1600){
+    myanimation7.className = "slide-up-fade-in";
+    myanimation8.className = "slideRight";
+    myanimation9.className = "slideRightLeft";
+  }
+  else {
+    myanimation7.className = "";
+    myanimation8.className = "";
+    myanimation9.className = "";
+  }
+  }
+
+  function scrollFunction5() {
+  if (document.body.scrollTop >= 2150 || document.documentElement.scrollTop >= 2150){
+    myanimation10.className = "slide-up-fade-in";
+    myanimation11.className = "slideLeft";
+    myanimation12.className = "slideRightLeft";
+  }
+  else {
+    myanimation10.className = "";
+    myanimation11.className = "";
+    myanimation12.className = "";
+  }
+  }
+
+</script>
+
+</div>
+
+</div>

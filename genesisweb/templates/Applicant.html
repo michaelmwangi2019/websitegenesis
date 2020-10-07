@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Application{% endblock %}
+<script>
+function changecolour()
+    {
+     if(amount>10000){
+       document.getElementById("amount").innerHTML(color)=green;
+        }
+      else
+      {
+      document.getElementById("amount").innerHTML(color)=red;
+      }
+    }
+</script>
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active">Applicant Details</li>
+
+{% endblock %}
+
+{% block content %}
+<h2>APPLICATION FORM </h2>
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  position: fixed;
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Application</div>
+
+
+
+
+<form  class="was-validated">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary" onclick="changecolour()">Submit</button>
+    <button type="button" class="btn btn-warning"><a href="{% url 'applicantslist' %}">View Applicants</a></button>
+
+</form>
+    {% endblock %}
+

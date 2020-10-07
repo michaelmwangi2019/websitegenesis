@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Detox {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Disbursement Details</a></li>
+
+{% endblock %}
+
+{% block content %}
+        <h2> DETOXIFICATION </h2>
+
+
+
+<style>
+    /* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Detox</div>
+</div>
+
+<div class="row container-fluid">
+    <div class="col-md-6">
+
+    <style>
+.img-trans {
+  width: 200px;
+  height: 200px;
+  background: red;
+  -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 3s;
+}
+
+.img-trans:hover {
+  width: 250px;
+  height: 250px;
+}
+    </style>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<img src="{% static 'images/carousel2.jpg' %}" class="img-trans">
+
+    </div>
+
+    <div class="col-md-6">
+
+    <style>
+div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 3s alternate; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s 1;
+}
+
+/* Safari 4.0 - 8.0 */
+
+#div2 {-webkit-animation-timing-function: ease;}
+
+
+/* Standard syntax */
+
+#div2 {animation-timing-function: ease;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+    </style>
+
+    <div id="div2">ease</div>
+
+    </div>
+
+</div>
+
+    {% endblock %}

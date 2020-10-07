@@ -1,0 +1,235 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Signature Services {% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Trauma and Resilience</a></li>
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+#h3para3{
+padding-top: 50px;
+font-size: 26px;
+}
+
+.pfound3-1{
+margin: auto;
+padding-top: 10px;
+font-size: 18px;
+font-family: Segoe UI;
+line-height: 1.8;
+}
+</style>
+
+<div class="bg-text">Signature Services</div>
+
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md bg-light text-dark text-center">
+        <h3 class="font-weight-bold" id="h3para3">TRAUMA <font color="#01A9DB">&</font> RESILIENCE</h3><br>
+        <p class="pfound3-1" align="right lead">
+            Our Trauma & Resiliency Program is designed to address the psychological and physiological symptoms that can emerge from
+            both acute and developmental trauma.  The program combines body-based practices, such as Sensorimotor Psychotherapy,
+            Somatic Experiencing, and EMDR with our Foundations Treatment services including DBT, ACT, Mentalization,
+            family therapy, neuro-feedback, psychiatry, and experiential activities (trauma-informed yoga and Qigong.)
+    </div>
+
+    <div class="col-md bg-light">
+    <style>
+.flip-box {
+  background-color: transparent;
+  width: 680px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="{% static 'images/imgmeditation4.jpg' %}" alt="Photo" style="width:680px;height:350px;">
+            </div>
+            <div class="flip-box-back">
+                <h1>TRAUMA</h1>
+                <h3>Our multi-modal approach utilizes individual therapy, group therapy, family therapy, psychiatry
+                    and case management to focus on key areas that we consider central to the mental health and
+                    future well-being of our clients.</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" align="center">
+    <style>
+        h1{
+        padding: 45px;
+        font-size: 38px;
+        color: white;
+        }
+
+        .pfound3{
+        padding-top: 1px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        .pfound3-3{
+        padding-bottom: 30px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        h3{
+        font-family: Segoe UI;
+        font-size: 24px;
+        padding-top: 20px;
+        }
+
+    </style>
+    <div class="col-lg">
+        <h1>OUR APPROACH</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md bg-white">
+
+        <h3><font color="#01A9DB">What is Trauma?</font></h3>
+        <p class="pfound3">Psychological trauma is defined as a deeply disturbing experience that impacts a person’s physical
+            or psychological safety and well-being to the degree that it impedes their ability to function in the world.
+            It involves an overwhelming level of stress that exceeds one’s internal resources, and thus, one is unable to
+            cope or integrate the intense emotions that emerge from that experience. Examples of acute trauma include physical
+            and sexual assaults, experiences associated with military combat, accidents, certain medical procedures,
+            natural disasters,
+            and violent crime.  Developmental trauma can include child abuse (both physical and emotional), neglect,
+            deprivation,
+            unsafe living conditions, or repetitive bullying.  Developmental trauma can manifest in ongoing negative
+            relational interactions
+            occurring within families or among childhood peers.</p>
+
+        <h3><font color="#01A9DB">What is Trauma-Informed Care?</font></h3>
+        <p class="pfound3">At Genesis Sober we believe that the treatment of trauma is best conceptualized in stepwise
+            fashion with three distinct phases.
+            Phase one is symptom stabilization and trauma orientation, phase two is trauma processing, and phase three
+            is trauma integration.
+            Current research shows that symptoms are best targeted through approaches sensitive to the interplay of the
+            body and the mind’s response to trauma.
+            We utilize various body-based models that invite the client to access the trauma through a bottom-up, rather
+            than top-down, approach.</p>
+
+        <h3><font color="#01A9DB">Why Choose the Trauma Program at Genesis Sober?</font></h3>
+        <p class="pfound3-3">Genesis Sober offers trauma-informed care utilizing treatment modalities such as EMDR,
+            Sensorimotor Psychotherapy,
+            and Somatic Experiencing within
+            the context of a comprehensive psychological treatment that includes a range of group and individual therapies.
+            When combined,
+            these modalities can effectively treat both trauma and the psychological symptoms and conditions that often
+            co-exist with trauma
+            such as depression, anxiety, and relational problems.  We find that trauma treatment is most effective when
+            clients are also engaging
+            in adjunctive therapies such as DBT, ACT, Mentalization, Art Therapy, Music Therapy, and Neuro-feedback,
+            as well as
+            <font color="#01A9DB" style="cursor: pointer;">family therapy</font> and psychiatry when indicated.
+            All of these approaches, and more, are available at Genesis Sober and can be combined in a tailored fashion to meet
+            the unique needs of each client.</p>
+    </div>
+</div>
+
+<div class="row">
+    <style>
+        .btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+    </style>
+    <div class="col-md">
+        <p class="pfound3">CONTACT US TO FIND MORE ABOUT OUR PROGRAM</p>
+        <a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a>
+    </div>
+
+</div>
+
+{% endblock %}

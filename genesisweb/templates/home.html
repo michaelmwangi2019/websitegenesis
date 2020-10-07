@@ -1,0 +1,440 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home page{% endblock %}
+
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+<div class="topnav">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="col-11 container-fluid">
+        <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Type to Search" style="width:260px; height:40px; font-size:16px;">
+        <button class="btn btn-success" type="submit" style="width:170px; height:45px;">Search</button>
+        </form>
+    </div>
+    <div class="col-1" id="mainMenu">
+    {% if user.is_authenticated %}
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ user.username }}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                <a class="dropdown-item" href="{% url 'myaccount' %}">My account</a>
+                <a class="dropdown-item" href="{% url 'resetpassword' %}">Change password</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
+            </div>
+        </li>
+    </ul>
+    {% else %}
+    <form class="form-inline ml-auto">
+        <a href="{% url 'login' %}" class="btn btn-outline-secondary">Log in</a>
+        <a href="{% url 'signup' %}" class="btn btn-primary ml-2">Sign up</a>
+
+    </form>
+    {% endif %}
+</div>
+
+</nav>
+</div>
+
+
+
+<style>
+
+.slide-up-fade-in{
+    animation: slide-up-fade-in ease 4.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+    visibility: visible;
+    opacity:0;
+    opacity: 1\9;
+}
+
+@keyframes slide-up-fade-in{
+    0% {
+        opacity:0;
+        transform:  translate(0px,90px)  ;
+}
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+}
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md bg-light text-dark text-center">
+            <div id="titlesoberexp" class="w3-container w3-center w3-animate-left">
+        <h2 class="font-weight-bold h2para1 text-info"><font color="black">THE</font> GENESIS SOBER <font color="black">EXPERIENCE</font></h2><br>
+            </div>
+        <p id="soberexp" class="para1" align="right lead" style="padding-top: 4px; padding-left: 15px; padding-right:10px; align-self:center; pointer-events: auto; font-size: 17px; line-height: 1.8;">
+        At Genesis Sober, we believe in high quality personalized care and a strong sense of community
+        that can elevate a young person’s self-esteem and renew his/her desire to live. We offer
+        specialized mental health treatment services for both gender above 18 years of age. Our primary
+        focus is on drugs addiction and mental health challenges such as crisis, trauma, loss and developmental difficulties.
+        Genesis sober Community clients receive at least one individual psychotherapy session each week for the entire duration of treatment
+        provided by licensed clinicians with years of experience. Our emphasis is on individual growth and resocialization facilitated by
+        community involvement through dynamic group experiences, <font title="Click here to find out more about the Family Therapy" color="blue"><a href="#">family therapy</a></font>, and experiential
+        learning activities.
+        </p>
+    </div>
+
+    <div id="imagesoberexp" class="col-md bg-light">
+
+        <img id="imagehppy5" src="{% static 'images/happy5.jpg' %}" style="width:700px; height:450px;">
+
+    </div>
+
+  </div>
+</div>
+
+<br>
+
+<!--Orange nav without text -->
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark"></nav>
+
+<style type="text/css">
+#img007:hover {
+opacity: 0.3;
+cursor: pointer;
+}
+#img008:hover {
+opacity: 0.3;
+cursor: pointer;
+}
+#img005:hover {
+opacity: 0.3;
+cursor: pointer;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+
+</style>
+
+<div class="row">
+
+  <div class="column">
+      <a href="{% url 'gallery' %}">
+          <img src="{% static 'images/home2.jpg' %}" alt="kitchen" style="width:100%" id="img007" title="The serene environment for your recovery">
+      </a>
+  </div>
+
+  <div class="column">
+    <a href="{% url 'gallery' %}">
+        <img src="{% static 'images/home3.jpg' %}" alt="lounge" style="width:100%" id="img008" title="'Conglomerates', Men's Upper Room">
+    </a>
+  </div>
+
+  <div class="column">
+    <a href="{% url 'gallery' %}">
+        <img src="{% static 'images/home4.jpg' %}" alt="room" style="width:100%" id="img005" title="Genesis garden for your outdoor relaxation">
+    </a>
+  </div>
+</div>
+
+    <style>
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+    </style>
+
+
+<div class="row container-fluid">
+   <!--<div class="div-img bg-light">-->
+      <div id="aboutsoberimage" class="col-md bg-light">
+        <img id="imagehppy33" src="{% static 'images/happy2.jpg' %}" style="width:680px; height:475px;">
+      </div>
+   <!--</div>-->
+
+   <div class="col-md bg-light text-dark text-center">
+            <div id="titleaboutsober" class="w3-container w3-center w3-animate-left">
+            <h2 class="font-weight-bold h2para2 text-info"><font color="black">ABOUT</font> GENESIS SOBER</h2><br>
+            </div>
+        <p id="aboutsoberpara" class="para2" align="right lead" style="padding-top: 5px; padding-right: 20px; align-self:center; pointer-events: auto; font-size: 17px; line-height: 1.8;">
+            At Genesis Sober Community, we strive to not only assist people to free themselves from alcohol & other drugs
+            but also to ensure that they embark on a holistic goal directed behavior change with the main objective of
+            transforming the individuals to responsible persons in the society. <br>Our programs are tailored to ensure
+            that our residents become self sustaining through personal empowerment activities. We believe that with the
+            serene & supportive environment offered, our organization is able to set in motion critical processes that
+            will eventually herald our clients’ optimal actualization of inner potentials.
+
+        </p><br>
+
+    <div>
+    <style>
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 4px solid #01A9DB;
+  outline-offset: 5px;
+}
+</style>
+
+        <a href="{% url 'learnmore' %}"><button class="btn">Learn More</button></a>
+    </div>
+
+    </div>
+</div>
+
+<br>
+
+<!--Orange nav with without text -->
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark"></nav>
+
+    <div class="col-md">
+
+    <style>
+.img-trans {
+  width: 200px;
+  height: 200px;
+  background: red;
+  -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s, height 1s;
+}
+
+.img-trans:hover {
+  width: 300px;
+  height: 300px;
+}
+    </style>
+
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/home6.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/image011.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/masimba.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/image003.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/home8.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/image009.jpg' %}" class="img-trans"></a>
+
+    </div>
+<br>
+<div class="row container-fluid bg-light">
+
+   <div class="col-md bg-light text-dark text-center">
+            <div id="titlesoberprograms" class="w3-container w3-center w3-animate-right">
+        <h2 class="font-weight-bold h2para1 text-info">GENESIS SOBER <font color="black">PROGRAMS</font></h2><br>
+            </div>
+        <p id="soberprogrampara" class="para1" align="right lead" style="padding-top: 4px; padding-left: 15px; padding-right:10px; align-self:center; pointer-events: auto; font-size: 17px; line-height: 1.8;">
+            From our medically-managed Comfort Detox to our <font color="blue"><a href="#">after care</a></font> programs, Genesis Sober offers a
+            full continuum of care to help you overcome your addiction. When you enter our facility,
+            our team determines which programs will work best for you. Whether you need a Triple Diagnosis™ program
+            or a Partial Hospitalization Program, Genesis Sober is ready to guide you in every step of the way toward recovery.
+        </p><br>
+
+ <a href="{% url 'learnmore' %}"><button class="btn">Learn More</button></a>
+
+    </div>
+      <div class="col-md bg-light" id="soberprogramimage" >
+        <img id="myImghppy4" class="hppy4" src="{% static 'images/happy22.jpg' %}" style="width:680px; height:390px;">
+      </div>
+
+</div>
+<br>
+
+   <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bg-light"></div>
+            <div class="col-md-6 bg-dark"></div>
+        </div>
+    </div>-->
+
+<br>
+
+<!--Orange nav with without text -->
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark"></nav>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+
+      <div id="directorimage" class="col-md bg-light">
+        <img class="hppy44 bg-white" id="imagedirector4" src="{% static 'images/director4.jpg' %}"
+             style="width:400px; height:470px; padding-top:0px;">
+    </div>
+
+      <style>
+.slideLeft {
+  animation-name: slideLeft;
+  animation-duration: 4.5s;
+  visibility: visible;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+ #imagedirector4{visibility:visible;}
+
+ .slideRight {
+  animation-name: slideRight;
+  animation-duration: 4.5s;
+  visibility: visible;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.slideRightLeft {
+  animation-name: slideRightLeft;
+  animation-duration: 2s;
+  visibility: visible;
+}
+
+@keyframes slideRightLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  }
+    50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(15%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+</style>
+
+
+   <div class="col-md bg-light text-dark text-center">
+            <div id="titledirector" class="w3-container w3-center w3-animate-left">
+        <h2 class="font-weight-bold h2para11 text-info"><font color="black"></font> WORD FROM THE <font color="black">DIRECTOR</font></h2><br>
+            </div>
+        <p id="directorpara" class="para11" align="right lead" style="padding-top: 4px; padding-left: 15px; padding-right:80px; padding-left:50px; align-self:center; pointer-events: auto; font-size: 17.5px; line-height: 1.8;">
+         Drug addiction is a chronic relapsing and fatal disease whose devastating effects have far and wide ramifications
+         that dehumanize, degrade, and debilitate its victims and their significant others in immeasurable ways.
+         Restoring persons with addictions back to normal functionalism is a huge task that demands honest and committed
+         efforts by those of us who aspire to do so. It calls on us to delve deeper into the core of our being for passions
+         that push us beyond the call of duty as we attend to such passions.
+         To ensure that our patients benefit optimally from our services, we work with others in the field to ensure an all
+         round approach that includes medical detoxification, residential treatment,<font title="Click here to find out more
+          about the Family Therapy and after care programs" color="blue">
+         <a href="#">family therapy, after care</a></font> , and formidable
+         support systems.  We believe that it is for this well rounded approach to treatment that has realized the greater
+         majority of our patients’ achieve recovery culminating in reintegration back to their families, communities, and the wider society.
+        </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<style>
+
+/*****Position text in the transparent box at the centre of the page*****Mwangaza wa jamii****/
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  border: #f1f1f1;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 470px;
+  padding: 10px;
+  padding-left:20px;
+  text-align: center;
+}
+</style>
+<div onscroll="scrollFunction()" class="bg-text" id="mytext"><i>"Mwangaza wa Jamii"</i></div>
+
+<br>
+
+
+<!--The recovery journey is not one that you have to take alone--
+
+    <style>
+div.background {
+  //background:  url({% static 'images/carousel4.jpg' %});
+  border: 2px solid black;
+  width: 60%;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+
+    <div class="background">
+        <div class="transbox">
+            <p>The Recovery journey is not one</p>
+            <p>that you have to take alone.</p>
+            <p>Begin Living a Life of Purpose By Contacting Genesis Sober Today.</p>
+
+            <input type="button" value="Call 0723865762"><br>
+            <input type="button" value="Verify your Insurance">
+        </div>
+    </div>
+
+-->
+{% endblock %}
+

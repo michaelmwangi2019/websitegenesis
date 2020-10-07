@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Application{% endblock %}
+
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'applicant' %}">Applicant Details</a></li>
+
+{% endblock %}
+
+{% block content %}
+<h2> BURSARY APPLICATION DETAILS </h2>
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">View the Applicants</div>
+
+
+
+
+<div><label>FILTER RECORDS</label>
+<input type="text" id="FilterInput">
+</div>
+<form  class="was-validated">
+
+  <table class="table table-striped container">
+      <thead class="thaed thead-inverse thead-dark">
+      <tr>
+          <th>First_Name</th>
+          <th>Middle_Name</th>
+          <th>Last_Name</th>
+          <th>Gender</th>
+          <th>Applicant_ID</th>
+          <th>Amount</th>
+          <th>Birth_Date</th>
+          <th>Guardian_Telephone</th>
+          <th>Institution_Name</th>
+          <th>Application_Date</th>
+      </tr>
+      </thead>
+      <tbody id="ApplicantsTable">
+{% for applicant in Applicants %}
+        <tr>
+        <td>{{applicant.First_Name}}</td>
+          <td>{{applicant.Middle_Name}}</td>
+          <td>{{applicant.Last_Name}}</td>
+          <td>{{applicant.Gender}}</td>
+          <td>{{applicant.Applicant_ID}}</td>
+          <td>{{applicant.Amount}}</td>
+          <td>{{applicant.Birth_Date}}</td>
+          <td>{{applicant.Guardian_Telephone}}</td>
+          <td>{{applicant.Institution_Name}}</td>
+          <td>{{applicant.Application_Date}}</td>
+        <td class="text-left">
+            <a class="btn-warning" href="{% url 'editapplicant' pk=applicant.id %}">Edit</a>
+            <a class="btn-danger" href="{% url 'deleteapplicant' pk=applicant.id %}">Delete</a>
+        </td>
+          </tr>
+ {% endfor %}
+      </tbody>
+  </table>
+
+</form>
+    {% endblock %}

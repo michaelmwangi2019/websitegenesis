@@ -1,0 +1,268 @@
+<title>Genesis Sober</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- CSS Links-->
+<link href="{% static 'css/genesis.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/genesisofficial.css' %}" rel="stylesheet" type="text/css">
+
+
+<html class="js supports no-touchevents no-forcetouch cssanimations cssgridlegacy cssgrid cssfilters csstransforms csstransforms3d csstransitions mobile-false js_active  vc_desktop  vc_transform  vc_transform  not-iOS" lang="en-US" data-ult_smooth_speed="250" data-ult_smooth_step="45"><!--<![endif]--><head>
+
+<!-- Google Tag Manager -->
+<script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script>
+<script src="https://www.googletagmanager.com/gtm.js?id=GTM-5QLRZ3H" async=""></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QLRZ3H');</script>
+<script type="text/javascript">
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var originalAddEventListener = EventTarget.prototype.addEventListener,
+                    oldWidth = window.innerWidth;
+
+                EventTarget.prototype.addEventListener = function (eventName, eventHandler, useCapture) {
+                    if (eventName === "resize") {
+                        originalAddEventListener.call(this, eventName, function (event) {
+                            if (oldWidth === window.innerWidth) {
+                                return;
+                            }
+                            else if (oldWidth !== window.innerWidth) {
+                                oldWidth = window.innerWidth;
+                            }
+                            if (eventHandler.handleEvent) {
+                                eventHandler.handleEvent.call(this, event);
+                            }
+                            else {
+                                eventHandler.call(this, event);
+                            };
+                        }, useCapture);
+                    }
+                    else {
+                        originalAddEventListener.call(this, eventName, eventHandler, useCapture);
+                    };
+                };
+            };
+</script>
+
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+
+<div class="row-mx-auto container-fluid">
+    <div class="col-lg">
+        <img src="{% static 'images/pramic2.jpg' %}" alt="GIF Image" style="width: 100%; height: 50%;">
+    </div>
+</div>
+
+
+
+<!--Special menu bar with animated Drop downs-->
+<div class="row">
+
+	<style>
+/* Animated menu bar in the About template*/
+
+  a{text-align:center}
+
+ol{margin:0;padding:0;list-style-type:none}
+
+.menu{
+	width:100%;
+	padding:0 16px;
+	display:block;
+	position:relative
+	}
+
+.menu > ol:first-child{
+	width:100%;
+	display:flex;
+	position:relative;
+	flex-flow:row wrap;
+	justify-content:center
+	}
+
+.menu-item{
+	width:150px;
+	position:relative;
+	perspective:100%;
+	cursor:pointer
+	}
+
+.menu-item a{
+	width:100%;
+	padding:16px 0;
+	display:block;
+	position:relative;
+	color:#fff;
+	border-radius:4px;
+	transition:all .5s ease;
+	transform-style:preserve-3d
+	}
+
+.menu-item a:before{
+	width:100%;
+	padding:16px 0;
+	display:block;
+	position:absolute;
+	color:#000;
+	border-radius:4px
+	}
+
+.menu > ol:first-child > .menu-item{display:block}
+
+.menu > ol:first-child > .menu-item > a
+	{background:#000;box-shadow:0 8px 6px -6px #595959}
+
+.menu > ol:first-child > .menu-item:nth-of-type(2) > a,
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a
+	{border-left:1px solid #fff;border-right:1px solid #fff}
+
+.menu > ol:first-child > .menu-item > a:before
+	{background:#ff9900;bottom:90%;transform:rotateX(-90deg) translate3d(0,0,75px)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(1) > a:before{content:"Home"}
+.menu > ol:first-child > .menu-item:nth-of-type(2) > a:before{content:"About"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > a:before{content:"Programs"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a:before{content:"Services"}
+.menu > ol:first-child > .menu-item:nth-of-type(5) > a:before{content:"Services"}
+
+.menu > ol:first-child > .menu-item:nth-of-type(3) > a:after,
+.menu > ol:first-child > .menu-item:nth-of-type(4) > a:after{
+	content:"\0025BE";
+	width:100%;
+	padding:30px 0 0 0;
+	top:0;
+	display:block;
+	position:absolute;
+	color:#fff;
+	font-size:20px;
+	text-align:center
+	}
+
+.menu > ol:first-child > .menu-item:hover > a{transform:rotateX(90deg)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(3):hover > a:after,
+.menu > ol:first-child > .menu-item:nth-of-type(4):hover > a:after
+	{content:"\0025B4";color:#000;transform:rotateX(-90deg) translate3d(0,0,75px)}
+
+.sub-menu{
+	background:#fff;
+	width:100%;
+	top:51px;
+	display:none;
+	position:absolute;
+	z-index:99;
+	border-top:1px solid #fff
+	}
+
+.sub-menu > .menu-item:nth-of-type(1){animation:fadein-down .5s .2s ease both}
+.sub-menu > .menu-item:nth-of-type(2){animation:fadein-down .7s .2s ease both}
+.sub-menu > .menu-item:nth-of-type(3){animation:fadein-down .9s .2s ease both}
+
+@keyframes fadein-down{
+	from{display:none;opacity:0;transform:translateY(-10px)}
+	to{display:block;opacity:1;transform:translateY(0)}
+	}
+
+.sub-menu > .menu-item > a{background:#008080}
+
+.sub-menu > .menu-item:nth-of-type(2) > a
+	{border-top:1px solid #fff;border-bottom:1px solid #fff}
+
+.sub-menu > .menu-item > a:before
+	{background:#bc003b;top:0}
+
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item > a:before{transform:rotateY(-90deg) translate3d(0,0,75px)}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(1) > a:before{content:"Big Widgets"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(2) > a:before{content:"Bigger Widgets"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:nth-of-type(3) > a:before{content:"Huge Widgets"}
+.menu > ol:first-child > .menu-item:nth-of-type(3) > .sub-menu > .menu-item:hover > a{transform:rotateY(90deg)}
+
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item > a:before{transform:rotateY(90deg) translate3d(0,0,75px)}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(1) > a:before{content:"Shishkabobs"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(2) > a:before{content:"BBQ kabobs"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:nth-of-type(3) > a:before{content:"Summer kabobs"}
+.menu > ol:first-child > .menu-item:nth-of-type(4) > .sub-menu > .menu-item:hover > a{transform:rotateY(-90deg)}
+
+.menu > ol:first-child > .menu-item:hover > .sub-menu{display:block}
+
+@media screen and (min-width:321px) and (max-width:799px){
+	.menu{width:320px;margin:auto}
+	}
+
+@media (max-width:799px){
+	.menu > ol:first-child > .menu-item{width:100%}
+	.menu > ol:first-child > .menu-item > a{box-shadow:none}
+
+	.menu > ol:first-child > .menu-item:nth-of-type(2) > a,
+	.menu > ol:first-child > .menu-item:nth-of-type(4) > a
+		{border:1px solid #fff;border-left:none;border-right:none}
+
+	.sub-menu > .menu-item{margin:auto}
+	}
+
+	</style> <!--CSS formatting for the 3d navbar located in genesisofficial.css -->
+
+
+<div class="col-md-8">
+<nav class="menu">
+	<ol>
+		<li class="menu-item"><a href="#0">Home</a></li>
+		<li class="menu-item"><a href="#0">About</a></li>
+		<li class="menu-item"><a href="#0">Treatment</a>
+			<ol class="sub-menu">
+				<li class="menu-item"><a href="#0">Drug and Alcohol Treatment</a></li>
+				<li class="menu-item"><a href="#0">Adiction Therapy Services</a></li>
+				<li class="menu-item"><a href="#0">Residential Treatment</a></li>
+			</ol>
+		</li>
+		<li class="menu-item"><a href="#0">Signature Services</a>
+			<ol class="sub-menu">
+				<li class="menu-item"><a href="#0">Foundations</a></li>
+				<li class="menu-item"><a href="#0">OCD & Anxiety</a></li>
+				<li class="menu-item"><a href="#0">Trauma & Resiliency</a></li>
+			</ol>
+		</li>
+		<li class="menu-item"><a href="#0">Detox</a></li>
+	</ol>
+</nav>
+</div>
+</div>
+
+
+
+
+
+<style type="text/css">
+
+/* Position text in the left top corner of the page */
+.bga-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+
+</style>
+
+<div class="bga-text">Base Auxilliar</div>
+

@@ -1,0 +1,1117 @@
+/** Animation for the message from the Director image **/
+
+.slideLeft {
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  visibility: visible;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+
+
+/* Container holding the social media icons */
+div.socialmed{
+padding-left:30px;
+}
+
+h2{
+font-size: 40px;
+}
+
+p{
+font-size: 14px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 75%;
+  background-color: black;
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img.hppy4{
+padding-left:90px;
+}
+
+h2{
+  text-shadow: 2px #ff000;
+}
+
+/*the genesis sober experience*/
+p.para1{
+padding-top: 4px;
+padding-left: 15px;
+padding-right:10px;
+align-self:center;
+pointer-events: auto;
+font-size: 15px;
+line-height: 1.8;
+}
+.h2para1{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 30px;
+}
+
+/*About genesis sober*/
+p.para2{
+padding-top: 5px;
+padding-right: 20px;
+align-self:center;
+pointer-events: auto;
+font-size: 15px;
+line-height: 1.8;
+
+}
+.h2para2{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 30px;
+}
+
+/*A word from the director*/
+.para11{
+padding-top: 4px;
+padding-left: 15px;
+padding-right:100px;
+align-self:center;
+pointer-events: auto;
+font-size: 15px;
+line-height: 1.8;
+}
+.h2para11{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 30px;
+}
+
+/* Large rounded hr beneath menu */
+hr.new1 {
+display: block;
+content: ".......";
+height: 30px;
+margin-top: -29px;
+border-style: solid;
+border-color: black;
+border-width: 0 0 3px 0;
+border-radius: 20px;
+}
+
+
+/******NAV BAR*****/
+
+
+li:last-child {
+  border-right: none;
+}
+/************FOOTER***********/
+#footer {
+  position: relative;
+  width: 100%;
+  background: url(images/tiles/footer-bg.png) repeat-x 0 0;
+  margin-top: -455px;
+  height: 455px;
+  clear: both;
+}
+#footer {
+  background: url(images/tiles/footer-bg-sub-short.png) repeat-x 0 0;
+  margin-top: -455px;
+  height: 455px;
+}
+.footer-content {
+  width: 960px;
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0;
+}
+.footer-content #ready {
+  height: 250px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  letter-spacing: 0;
+  color: #5e7197;
+  padding-top: 90px;
+  position: relative;
+}
+.footer-content #ready p {
+	margin: 0;
+	padding: 0;
+}
+.footer-content #ready #arrow {
+  display: block;
+  height: 125px;
+  width: 170px;
+  position: absolute;
+  z-index: 10;
+  background: url(images/circle-arrow.png) no-repeat 0 0;
+  top: -44px;
+  left: 50%;
+  margin-left: -85px;
+}
+.footer-content #footer-text {
+  position: relative;
+  background: url(images/logo-white.png) no-repeat right 50px;
+  height: 170px;
+  text-align: left;
+  padding-top: 55px;
+}
+.footer-content #footer-text span.call {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-content #copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: left;
+  padding-top: 10px;
+  text-transform: uppercase;
+  height: 35px;
+}
+.footer-content.subpage #ready {
+
+}
+.footer-content.subpage #ready #arrow {
+  top: -43px;
+}
+ul#menu-social-navigation {
+  display: block;
+  position: absolute;
+  top: -34px;
+  left: 0;
+}
+ul#menu-social-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0px 0 0px;
+}
+ul#menu-social-navigation li a {
+  display: block;
+  height: 64px;
+  width: 64px;
+  text-align: left;
+  text-indent: -9999px;
+}
+ul#menu-social-navigation li a:hover {
+  background-position: 0 -64px !important;
+}
+ul#menu-social-navigation li.youtube a {
+  background: url(images/social/youtube.png) no-repeat top center;
+}
+ul#menu-social-navigation li.linkedin a {
+  background: url(images/social/linkedin.png) no-repeat top center;
+}
+ul#menu-social-navigation li.instagram a {
+  background: url(images/social/instagram.png) no-repeat top center;
+}
+ul#menu-social-navigation li.twitter a {
+  background: url(images/social/twitter.png) no-repeat top center;
+}
+ul#menu-social-navigation li.facebook a {
+  background: url(images/social/facebook.png) no-repeat top center;
+}
+ul#menu-social-navigation li.vimeo a {
+  background: url(images/social/vimeo.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation {
+  display: block;
+  text-align: center;
+  left: 0;
+  padding: 0!important;
+  margin: 30px 0 0 0!important;
+}
+#right ul#menu-social-page-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 0 10px!important;
+  padding: 0!important;
+  background: none!important;
+}
+#right ul#menu-social-page-navigation li a {
+  display: block;
+  height: 200px;
+  width: 200px;
+  text-align: left;
+  text-indent: -9999px;
+}
+#right ul#menu-social-page-navigation li a:hover {
+  background-position: 0 -200px !important;
+}
+#right ul#menu-social-page-navigation li.youtube a {
+  background: url(images/social/youtube-lg.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation li.linkedin a {
+  background: url(images/social/linkedin-lg.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation li.twitter a {
+  background: url(images/social/twitter-lg.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation li.facebook a {
+  background: url(images/social/facebook-lg.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation li.vimeo a {
+  background: url(images/social/vimeo-lg.png) no-repeat top center;
+}
+#right ul#menu-social-page-navigation li.breathe a {
+  background: url(images/social/breathe-lg.png) no-repeat top center;
+}
+
+}
+/********ALIGNMENT********/
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 1.625em;
+}
+#right ul.site-map {
+  padding-left: 0!important;
+}
+body.safari {
+  min-width: 1100px;
+}
+
+a.seen-on {
+display: none;
+font-family: 'Arvo',serif;
+font-weight: 400;
+font-size: 36px;
+font-size:26px !important;
+letter-spacing: 0em;
+color: #ffffff;
+text-transform: uppercase;
+text-shadow: 0 0px 2px rgba(0,0,0,0.6);
+width: 960px;
+margin: 0px auto;
+position: relative;
+height: 80px;
+
+margin-top: 10px;
+}
+
+a.seen-on span.image{display:inline-block;max-width:200px;vertical-align:middle;}
+
+a.seen-on span.image img{max-width:100%;height:auto;}
+
+#services-nav {
+height:95px;
+}
+
+
+#verifyButton {
+font-size: 15px;
+line-height: 18px;
+margin-top: 10px;
+}
+
+
+.page-id-67 #getHelpNow {
+display:none !important;
+}
+
+.page-id-2060 #getHelpNow {
+	display:none !important;
+	visibility:hidden !important;
+}
+
+/* ----- Customs by MaddMarketing ----- */
+/* --- remove border/box from script on thankyou page ---- */
+.page-id-789 #content iframe {
+	border: none !important;
+}
+
+/* ----- New PPC Landing Pages Styling----- */
+/* Weight Loss PPC Page */
+.page-id-2944 #footer.subpage {
+	margin-top: -500px;
+}
+
+@media only screen and (max-width: 480px) {
+	.mm-wl-heading {
+		line-height: 36px;
+	}
+
+	.mm-wl-phone {
+		display: none;
+	}
+}
+
+/* All PPC Pages */
+.mm-large-header {
+	font-size: 33px;
+	font-weight:
+	bold; color: #003333;
+}
+
+.mm-phone-cta {
+	font-size: 40px;
+	font-weight:
+	bold; color: #003333;
+}
+
+.mm-body-text {
+	color: #5e7197;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.mm-background {
+	background: rgba(255,255,255, .8);
+	width: auto;
+	height: auto;
+	padding: 30px;
+	text-align: center;
+}
+
+.mm-outer-wrapper {
+	padding-top: 15px;
+	width: auto;
+	height: auto;
+	padding: 20px 40px 40px 40px;
+	text-align: center;
+}
+
+.mm-ppc-contact {
+	position: inherit;
+	float: left;
+	padding: 35px 20px 20px 20px;
+	bottom: inherit;
+	margin-left: 30px;
+}
+
+.mm-ppc-insurance {
+	bottom: inherit;
+	margin-left: 30px;
+	padding: 35px 20px 20px 20px;
+}
+
+.page-id-2416 #top-menu ul#menu-top-navigation
+, .page-id-2489 #top-menu ul#menu-top-navigation
+, .page-id-2553 #top-menu ul#menu-top-navigation
+, .page-id-2601 #top-menu ul#menu-top-navigation
+, .page-id-2605 #top-menu ul#menu-top-navigation
+, .page-id-2944 #top-menu ul#menu-top-navigation {
+	display: none;
+}
+
+.page-id-2416 #header #nav
+, .page-id-2489 #header #nav
+, .page-id-2553 #header #nav
+, .page-id-2601 #header #nav
+, .page-id-2605 #header #nav
+, .page-id-2944 #header #nav {
+	height: 20px;
+}
+
+.page-id-2416 #menu-main-navigation
+, .page-id-2489 #menu-main-navigation
+, .page-id-2553 #menu-main-navigation
+, .page-id-2601 #menu-main-navigation
+, .page-id-2605 #menu-main-navigation
+, .page-id-2944 #menu-main-navigation {
+	display: none;
+}
+
+.page-id-2416 #header.subpage
+, .page-id-2489 #header.subpage
+, .page-id-2553 #header.subpage
+, .page-id-2601 #header.subpage
+, .page-id-2605 #header.subpage
+, .page-id-2944 #header.subpage {
+	height: 173px;
+}
+
+.page-id-2416 h1
+, .page-id-2489 h1
+, .page-id-2553 h1
+, .page-id-2601 h1
+, .page-id-2605 h1
+, .page-id-2944 h1 {
+	display: none !important;
+}
+
+.page-id-2416
+, .page-id-2489
+, .page-id-2553
+, .page-id-2601
+, .page-id-2605
+, .page-id-2944 {
+	background: url('/wp-content/uploads/2014/12/LA-Breathe-LC-1800x1800-2.jpg') repeat-x 0 0 !important;
+}
+
+.page-id-2416 .gform_wrapper
+, .page-id-2489 .gform_wrapper
+, .page-id-2553 .gform_wrapper
+, .page-id-2601 .gform_wrapper
+, .page-id-2605 .gform_wrapper
+, .page-id-2944 .gform_wrapper {
+	width: 85% !important;
+	margin-left: 20px !important;
+	margin-top: -5px !important;
+}
+
+.page-id-2416 #main
+, .page-id-2489 #main
+, .page-id-2553 #main
+, .page-id-2601 #main
+, .page-id-2605 #main
+, .page-id-2944 #main {
+	min-height: 1700px !important;
+}
+
+@media only screen and (max-width: 959px) {
+	.page-id-2416 #footer.subpage
+	, .page-id-2489 #footer.subpage
+	, .page-id-2553 #footer.subpage
+	, .page-id-2601 #footer.subpage
+	, .page-id-2605 #footer.subpage {
+		height: 400px;
+	}
+
+	/* Weight Loss PPC Page */
+	.page-id-2944 #footer.subpage {
+		margin-top: 0;
+	}
+
+	.page-id-2416 #main
+	, .page-id-2489 #main
+	, .page-id-2553 #main
+	, .page-id-2601 #main
+	, .page-id-2605 #main
+	, .page-id-2944 #main {
+		min-height: inherit !important;
+	}
+
+	.mm-ppc-contact {
+		margin-left: -45px !important;
+	}
+
+	.mm-ppc-insurance {
+		margin-left: 0 !important;
+		height: 480px !important;
+		position: absolute !important;
+		left: 50% !important;
+		right: inherit !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.mm-wrapper {
+		max-width: 380px !important;
+		float: none !important;
+		position: inherit !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.page-id-2416
+	, .page-id-2489
+	, .page-id-2553
+	, .page-id-2601
+	, .page-id-2605
+	, .page-id-2944 {
+		background: none !important;
+		background-color: #b8d3e6 !important;
+	}
+
+	.page-id-2416 #main
+	, .page-id-2489 #main
+	, .page-id-2553 #main
+	, .page-id-2601 #main
+	, .page-id-2605 #main
+	, .page-id-2944 #main {
+		min-height: inherit !important;
+	}
+
+	.page-id-2416 #main.subpage
+	, .page-id-2489 #main.subpage
+	, .page-id-2553 #main.subpage
+	, .page-id-2601 #main.subpage
+	, .page-id-2605 #main.subpage {
+		background: url('/wp-content/uploads/2014/12/LA-Breathe-767x1730.jpg') no-repeat 0 0 !important;
+	}
+
+	/* Weight Loss PPC Page */
+	.page-id-2944 #main.subpage {
+		background: url('/wp-content/uploads/2014/12/LA-Breathe-767x1730.jpg') repeat-y 0 0 !important;
+	}
+
+	.mm-ppc-contact {
+		margin-left: 0 !important;
+	}
+
+	.mm-ppc-insurance {
+		position: inherit !important;
+		margin-left: 0 !important;
+		height: 480px !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.mm-background {
+		padding: 10px;
+	}
+
+	.page-id-2416 #main
+	, .page-id-2489 #main
+	, .page-id-2553 #main
+	, .page-id-2601 #main
+	, .page-id-2605 #main
+	, .page-id-2944 #main {
+		min-height: 1730px !important;
+	}
+
+	.page-id-2416 #main.subpage
+	, .page-id-2489 #main.subpage
+	, .page-id-2553 #main.subpage
+	, .page-id-2601 #main.subpage
+	, .page-id-2605 #main.subpage{
+		background: url('/wp-content/uploads/2014/12/LA-Breathe-767x2000.jpg') no-repeat 0 0 !important;
+	}
+
+	/* Weight Loss PPC Page */
+	.page-id-2944 #main.subpage {
+		background: url('/wp-content/uploads/2014/12/LA-Breathe-767x2000.jpg') repeat-y 0 0 !important;
+	}
+
+	.mm-ppc-contact {
+		margin-left: -45px !important;
+	}
+
+	.mm-ppc-insurance {
+		height: auto !important;
+		margin-left: -45px !important;
+	}
+
+	.page-id-2416 #insurance
+	, .page-id-2489 #insurance
+	, .page-id-2553 #insurance
+	, .page-id-2601 #insurance
+	, .page-id-2605 #insurance
+	, .page-id-2944 #insurance {
+		width: 300px;
+		height: auto;
+		display: inline !important;
+		background: rgba(255,255,255,.8) !important;
+		margin-top: 20px !important;
+		padding: 15px !important;
+		margin-bottom: 15px !important;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.page-id-2416 #insurance
+	, .page-id-2489 #insurance
+	, .page-id-2553 #insurance
+	, .page-id-2601 #insurance
+	, .page-id-2605 #insurance
+	, .page-id-2944 #insurance {
+		width: 300px;
+		height: auto;
+		display: inline !important;
+		background: rgba(255,255,255,.8) !important;
+		margin-top: 20px !important;
+		padding: 15px !important;
+	}
+}
+/* ----- END Customs by MaddMarketing ----- */
+
+
+
+
+
+
+#banner-content h1 {
+	margin-bottom: 0px;
+}
+
+body .button.blue,
+body .button.orange {
+	display: inline-block;
+	width: auto;
+	padding: 9px 15px;
+	background-color: #5e7197;
+	background-image: url(images/button-blue.jpg);
+	background-repeat: repeat;
+	line-height: 1.3;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.50);
+}
+
+body .button.blue:hover,
+body .button.orange:hover {
+	background-color: #f68c2b;
+	background-image: url(images/button-orange.jpg);
+}
+
+body .button.orange {
+	background-color: #f68c2b;
+	background-image: url(images/button-orange.jpg);
+}
+body .button.orange:hover {
+	background-color: #5e7197;
+	background-image: url(images/button-blue.jpg);
+}
+
+.dr-phil {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 500;
+	color: #0094D1;
+	font-size: 24px;
+	text-transform: none;
+}
+.dr-phil span {
+	color: #f68c2b !important;
+}
+
+.gma {
+	color: #FEC400;
+	font-size: 24px;
+}
+#banner-content {
+	padding-bottom: 30px;
+}
+#banner-content .button {
+	min-width: 215px;
+}
+#banner-content .overlay {
+	background-color: rgba( 255,255,255,.7 );
+	padding: 15px;
+	max-width: 560px;
+}
+
+.home #header {
+	height: auto;
+	min-height: 530px;
+}
+
+
+
+#services-nav a {
+	display: inline-block;
+	float: left;
+}
+.home #services-nav {
+	display: block;
+}
+
+#services-nav img {
+	width: 140px;
+	margin-top: 14px;
+	display: inline-block;
+	float: left;
+}
+#services-nav h2 {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #5e7197;
+    margin-top: 17px;
+    margin-left: 10px;
+    display: inline-block;
+	float: left;
+}
+
+#video-tour222 {
+	display: none !important;
+}
+
+#insurance h2 {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 959px) {
+	#services-nav .central {
+		width: 90% !important;
+		margin-left: 5%;
+	}
+	#header {
+		padding-bottom: 100px;
+	}
+
+}
+@media only screen and (max-width: 650px) {
+	#services-nav img {
+		width: 140px;
+		margin-top: 14px;
+	}
+	#services-nav h2 {
+		font-size: 18px;
+		margin-top: 26px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#services-nav h2 {
+		font-size: 16px;
+		margin-top: 26px;
+	}
+	#services-nav img {
+		width: 40px;
+		margin-top: 40px;
+	}
+}
+
+
+#gform_fields_1 #field_1_6 label {
+	display: block !important;
+	font-size: 14px !important;
+}
+
+#gform_fields_1 #field_1_6 label .gfield_required {
+	//display: none !important;
+}
+
+
+
+#joint-commision {
+	position: absolute;
+	top: 5px;
+    right: 0px;
+	width: 90px;
+	height: 90px;
+}
+
+@media only screen and (max-width: 959px) {
+	#joint-commision {
+
+	}
+}
+@media only screen and (max-width: 767px) {
+	#joint-commision {
+		display: none;
+	}
+}
+
+#top-menu {
+	right: 100px;
+}
+#top-call {
+	right: 100px
+}
+
+#top-arrow {
+	display: none;
+}
+
+
+
+
+
+
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	max-width: 134px;
+}
+
+
+
+/*! Swipebox v1.3.0 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
+html.swipebox-html.swipebox-touch{
+overflow:hidden!important
+}
+#swipebox-overlay img{
+border:none!important
+}
+#swipebox-overlay{
+width:100%;height:100%;position:fixed;top:0;left:0;z-index:99999!important;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none
+}
+#swipebox-container{
+position:relative;width:100%;height:100%
+}
+#swipebox-slider{
+-webkit-transition:-webkit-transform .4s ease;transition:transform .4s ease;height:100%;left:0;top:0;width:100%;white-space:nowrap;position:absolute;display:none;cursor:pointer}#swipebox-slider .slide{height:100%;width:100%;line-height:1px;text-align:center;display:inline-block}#swipebox-slider .slide:before{content:"";display:inline-block;height:50%;width:1px;margin-right:-1px}#swipebox-slider .slide .swipebox-inline-container,#swipebox-slider .slide .swipebox-video-container,#swipebox-slider .slide img{display:inline-block;max-height:100%;max-width:100%;margin:0;padding:0;width:auto;height:auto;vertical-align:middle}#swipebox-slider .slide .swipebox-video-container{background:0 0;max-width:1140px;max-height:100%;width:100%;padding:5%;-webkit-box-sizing:border-box;box-sizing:border-box}#swipebox-slider .slide .swipebox-video-container .swipebox-video{width:100%;height:0;padding-bottom:56.25%;overflow:hidden;position:relative}#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe{width:100%!important;height:100%!important;position:absolute;top:0;left:0
+}
+#swipebox-slider .slide-loading{background:url(img/loader.gif) center center no-repeat
+}
+#swipebox-bottom-bar,
+#swipebox-top-bar{
+-webkit-transition:.5s;transition:.5s;position:absolute;left:0;z-index:999;height:50px;width:100%
+}
+#swipebox-bottom-bar{bottom:-50px
+}
+#swipebox-bottom-bar.visible-bars{
+-webkit-transform:translate3d(0,-50px,0);transform:translate3d(0,-50px,0)
+}
+#swipebox-top-bar{
+top:-50px
+}
+#swipebox-top-bar.visible-bars{
+-webkit-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0)
+}
+#swipebox-title{
+display:block;width:100%;text-align:center
+}
+#swipebox-close,
+#swipebox-next,
+#swipebox-prev{
+background-image:url(img/icons.png);
+background-repeat:no-repeat;
+border:none!important;
+text-decoration:none!important;
+cursor:pointer;
+width:50px;
+height:50px;
+top:0
+}
+#swipebox-arrows{
+display:block;margin:0 auto;width:100%;height:50px
+}
+#swipebox-prev{background-position:-32px 13px;float:left
+}
+#swipebox-next{
+background-position:-78px 13px;float:right
+}
+#swipebox-close{
+top:0;right:0;
+position:absolute;
+z-index:9999;
+background-position:15px 12px
+}
+.swipebox-no-close-button
+ #swipebox-close{
+ display:none
+ }
+#swipebox-next.disabled,
+#swipebox-prev.disabled{
+opacity:.3
+}
+.swipebox-no-touch
+#swipebox-overlay.rightSpring
+#swipebox-slider{
+-webkit-animation:rightSpring .3s;
+animation:rightSpring .3s
+}
+.swipebox-no-touch
+#swipebox-overlay.leftSpring
+#swipebox-slider{
+-webkit-animation:leftSpring .3s;
+animation:leftSpring .3s
+}.swipebox-touch
+#swipebox-container:after,.swipebox-touch
+#swipebox-container:before{
+ -webkit-backface-visibility:hidden;
+ backface-visibility:hidden;
+ -webkit-transition:all .3s ease;
+ transition:all .3s ease;content:' ';
+ position:absolute;
+ z-index:999;top:0;
+ height:100%;
+ width:20px;
+ opacity:0
+ }
+.swipebox-touch
+#swipebox-container:before{
+left:0;
+-webkit-box-shadow:inset 10px 0 10px -8px #656565;
+box-shadow:inset 10px 0 10px -8px
+#656565
+}
+.swipebox-touch #swipebox-container:after{right:0;-webkit-box-shadow:inset -10px 0 10px -8px #656565;box-shadow:inset -10px 0 10px -8px #656565}.swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before,.swipebox-touch #swipebox-overlay.rightSpringTouch #swipebox-container:after{opacity:1}@-webkit-keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@-webkit-keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@media screen and (min-width:800px){#swipebox-close{right:10px}#swipebox-arrows{width:92%;max-width:800px}}#swipebox-overlay{background:#0d0d0d}#swipebox-bottom-bar,#swipebox-top-bar{text-shadow:1px 1px 1px #000;background:#000;opacity:.95}#swipebox-top-bar{color:#fff!important;font-size:15px;line-height:43px;font-family:Helvetica,Arial,sans-serif}
+
+
+/* Phone on Mobile */
+
+.mobile-phone {
+  display: none;
+}
+
+@media only screen and (max-width: 768px)
+ {
+
+.mobile-phone {
+  display: initial;
+  margin-top: 0px;
+}
+
+.mobile-phone p {
+  color: #fff;
+  padding-bottom: 0px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+}
+
+.mobile-phone a {
+  color: #fff !important;
+  font-size: 32px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+}
+
+
+#banner-content {
+  padding: 15px 0 0 0 !important;
+  text-align: center;
+}
+
+}
+
+/* Phone on Mobile */
+
+#insurance {
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+#insurance h2 {
+  margin-top: 0px;
+}
+
+#insurance #verifyButton {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+
+
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+inputs[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 15%;
+  border-radius: 15%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* nav for login properties */
+.topnav-right{
+float: left;
+}
+
+topnav{
+position: relative;
+overflow: hidden;
+}
