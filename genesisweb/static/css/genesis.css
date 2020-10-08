@@ -141,10 +141,11 @@ border-radius: 20px;
 
 /******NAV BAR*****/
 
-
 li:last-child {
   border-right: none;
 }
+
+
 /************FOOTER***********/
 #footer {
   position: relative;

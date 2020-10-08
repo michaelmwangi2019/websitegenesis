@@ -69,12 +69,15 @@
 </head>
 <body class="bg-info"><!--Background color for base-->
 
-<div class="row-mx-auto container-fluid"><img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%"></div>
+<div class="row-mx-auto container-fluid">
+    <img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%">
+</div>
+
 
 <style type="text/css">
 .navbar a:hover {
  background-color: #298A08;
- font-size: 15px;
+ font-size: 17px;
 }
 
 li.nav-item {
@@ -83,32 +86,141 @@ overflow: hidden;
 border-right: 1px solid #bbb;
 }
 
+.nav-item {
+text-align: center;
+}
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content, a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
 </style>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo/genesislogo3.jpg' %}" class="mx-auto rounded"></a>
-  <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">&nbsp;HOME &nbsp;</a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}">&nbsp;ABOUT US &nbsp;</a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices' %}">&nbsp;SIGNATURE SERVICES &nbsp;&nbsp; </a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'treatment' %}">&nbsp;TREATMENT &nbsp;&nbsp; </a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'eatingdisorder' %}">&nbsp;EATING DISORDER TREATMENT &nbsp;&nbsp; </a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'detox' %}">&nbsp;DETOX &nbsp;&nbsp; </a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'locations' %}">&nbsp;LOCATIONS &nbsp;&nbsp; </a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">&nbsp;LIFE SKILLS &nbsp;&nbsp; &nbsp;</a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">&nbsp;CONTACT US &nbsp;&nbsp; </a></li>
 
+    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo/genesislogo3.jpg' %}" class="mx-auto rounded"></a>
+
+    <ul class="navbar-nav">
+
+      <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">&nbsp;HOME &nbsp;</a></li>
+      </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}">&nbsp;ABOUT US &nbsp;</a></li>
+        </div>
+
+      <div class="dropdown">
+      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices' %}">&nbsp;ADDICTION TREATMENT PROGRAMS</a></li>
+          <div class="dropdown-content">
+            <a href="#">Drug and Alcohol Detox</a><hr>
+            <a href="#">Medication Assisted Treatment Program</a><hr>
+            <a href="#">Addiction Therapy Services</a><hr>
+            <a href="#">Residential Treatment Program</a><hr>
+            <a href="#">Inpatient Treatment Program</a><hr>
+            <a href="#">Partial Hospitalization Program</a><hr>
+            <a href="#">Aftercare Program</a>
+            <a href="#">Discharge Planning from Rehab</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+      <li class="nav-item"><a class="nav-link" href="{% url 'treatment' %}">SUBSTANCE ABUSE TREATMENT</a></li>
+          <div class="dropdown-content">
+            <a href="#">Alcohol Addiction Treatment</a><hr>
+            <a href="#">Marijuana Addiction Treatment</a><hr>
+            <a href="#">Heroin Addiction Treatment</a><hr>
+            <a href="#">Opioid Addiction Treatment</a><hr>
+            <a href="#">Drug Addiction Treatment</a><hr>
+            <a href="#">Painkiller Addiction Treatment</a>
+          </div>
+      </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'eatingdisorder' %}">&nbsp;EATING &nbsp;&nbsp; </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'detox' %}">&nbsp;DETOX &nbsp;&nbsp; </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'locations' %}">&nbsp;LOCATIONS &nbsp;&nbsp; </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">&nbsp;LIFE SKILLS &nbsp;&nbsp; &nbsp;</a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">&nbsp;GALLERY &nbsp;</a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">&nbsp;CONTACT US &nbsp;&nbsp; </a></li>
+        </div>
+
+        <div>
       <li class="nav-item"><a class="nav-link" href="{% url 'applicant' %}"> &nbsp;ADMISSION &nbsp;  </a></li>
+        </div>
+
+        <div>
       <li class="nav-item"><a class="nav-link" href="{% url 'disbursement' %}"> &nbsp;DISBURSEMENT &nbsp; </a></li>
-       <li class="nav-item"><a class="nav-link" href="{% url 'tester' %}"> &nbsp;Code Tester &nbsp;  </a></li>
-       <li class="nav-item"><a class="nav-link" href="{% url 'extracode' %}"> &nbsp;PAYMENTS &nbsp;  </a></li>
-       <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices2' %}">   1    </a></li>
-       <li class="nav-item"><a class="nav-link" href="{% url 'traumaresilience' %}">   2    </a></li>
-       <li class="nav-item"><a class="nav-link" href="{% url 'ocdanxiety' %}">&nbsp; &nbsp;3&nbsp; &nbsp;</a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">&nbsp; &nbsp;GALLERY&nbsp; &nbsp;</a></li>
-  </ul>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'tester' %}"> &nbsp;Code Tester &nbsp;  </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'extracode' %}"> &nbsp;PAYMENTS &nbsp;  </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices2' %}">   1    </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'traumaresilience' %}">   2    </a></li>
+        </div>
+
+        <div>
+      <li class="nav-item"><a class="nav-link" href="{% url 'ocdanxiety' %}">&nbsp; &nbsp;3&nbsp; &nbsp;</a></li>
+        </div>
+
+    </ul>
 
 </nav>
+
 <hr class="new1">
 
 <div class="container-fluid" id="containerfluid">
