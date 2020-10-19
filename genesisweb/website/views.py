@@ -115,9 +115,9 @@ def traumaresilienceview(request):
     return render(request, 'traumaresilience.html')
 
 
-def eatingdisorderview(request):
+def drugandalcoholdetoxview(request):
 
-    return render(request, 'eatingdisorder.html')
+    return render(request, 'drugandalcoholdetox.html')
 
 
 def galleryview(request):

@@ -28,7 +28,7 @@
 
 
 <!--favicon for the website-->
-<link rel="icon" href="{% static 'images/logo/favicon2.jpg' %}" type="image/gif" sizes="16x16">
+<link rel="icon" href="{% static 'images/logo/' %}" type="image/gif" sizes="16x16">
 <link href="https://www.Beaconhouse.org/wp-content/uploads/2018/09/Beacon-House-logo-Favicon-16-1.png" rel="icon" type="image/png" sizes="16x16">
 <link href="https://www.Beaconhouse.org/wp-content/uploads/2018/09/Beacon-House-logo-Favicon-32-1.png" rel="icon" type="image/png" sizes="32x32">
 
@@ -70,7 +70,7 @@
 <body class="bg-info"><!--Background color for base-->
 
 <div class="row-mx-auto container-fluid">
-    <img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%">
+    <img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%;">
 </div>
 
 
@@ -142,7 +142,7 @@ text-align: center;
       <div class="dropdown">
       <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices' %}">&nbsp;ADDICTION TREATMENT PROGRAMS</a></li>
           <div class="dropdown-content">
-            <a href="#">Drug and Alcohol Detox</a><hr>
+            <a href="{% url 'drugandalcoholdetox' %}">Drug and Alcohol Detox</a><hr>
             <a href="#">Medication Assisted Treatment Program</a><hr>
             <a href="#">Addiction Therapy Services</a><hr>
             <a href="#">Residential Treatment Program</a><hr>
@@ -165,9 +165,9 @@ text-align: center;
           </div>
       </div>
 
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'eatingdisorder' %}">&nbsp;EATING &nbsp;&nbsp; </a></li>
-        </div>
+      <!--<div>
+      <li class="nav-item"><a class="nav-link" href="#">&nbsp;DRUG AND ALCOHOL DETOX &nbsp;&nbsp; </a></li>
+        </div>-->
 
         <div>
       <li class="nav-item"><a class="nav-link" href="{% url 'detox' %}">&nbsp;DETOX &nbsp;&nbsp; </a></li>
@@ -263,7 +263,7 @@ body {margin:0;height:2000px;}
 
 .icon-bar {
  position: fixed;
-  top: 80%;
+  top: 77%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -694,7 +694,7 @@ function topFunction() {
 }
 
 function scrollFunction2() {
-  if (document.body.scrollTop >= 150 || document.documentElement.scrollTop >= 150){
+  if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80){
     myanimation.className = "slide-up-fade-in";
     myanimation2.className = "slideLeft";
     myanimation3.className = "slideRightLeft";
