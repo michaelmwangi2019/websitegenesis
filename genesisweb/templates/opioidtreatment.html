@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 570px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Opioid Addicction Treatment</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Despite the ways that opioid medications help millions of Americans every day, these drugs have
+			a high degree of abuse potential. Add in illicit opioids, such as heroin, and it’s no surprise the U.S. has
+			an opioid crisis sweeping the country. If you or a loved one has been gripped by opioid dependency, it’s
+			time to get opioid addiction treatment. Otherwise, your addiction will only grow worse, leading to consequences
+			that can affect your health, relationships and career.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>THE DANGERS OF OPIOID ADDICTION</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            Many people are aware of how dangerous an illicit drug like heroin is. However, they may not give much thought
+			to legal drugs they have in their own homes. Prescription painkillers are among the most widely abused drugs.
+			It’s easy for some people to downplay the abuse potential in some medications because their doctor prescribed
+			them. However, these prescription drugs can be habit-forming and addictive. As users grow use to the euphoric
+			feelings that opioid medications like Vicodin and OxyContin produce, they often develop a tolerance. Over time,
+			they take more of the drugs to feel the same effects. If their doctor stops prescribing the medication,
+			they may turn to “doctor shopping,” purchasing pills from illicit sources, or even turning to other opioids,
+			such as heroin. Without opioid addiction treatment, users run the risk of worsening their physical and mental health.</P>
+
+            </div>
+		</div>
+
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>THE DETOX PROCESS</h2>
+
+				<p class="para3">
+					When an individual enters withdrawal, they will meet with an admissions specialist and detox team
+                    that helps them evaluate their addiction. Furthermore, after this evaluation, the team will help
+                    the individual through the withdrawal process. The detox process will vary depending on the type
+                    of substance, the severity of the addiction, the individual’s health, and the addiction detox program itself.
+                    Every facility approaches detox differently. At Pillars Recovery, we want you to consider us your
+                    home away from home. Detox is an uncomfortable process, so we work hard to open our doors to you and
+                    make your experience as safe and comfortable as possible. In our comfort addiction detox program,
+                    you’ll find a unique and individualized experience designed to keep you uplifted and also dedicated
+                    to your recovery.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+		<h2>COMPREHENSIVE OPIOID ADDICTION TREATMENT</h2>
+		<p class="para3">
+			An opioid addiction treatment center California residents need may provide medication-assisted detox.
+			Methadone and suboxone are two of the most popular options for weaning clients off of opioids. This type
+			of detox is less painful for users and may lead to lower relapse rates since withdrawal won’t be as severe
+			and debilitating. Once someone completes detox, complete opioid addiction treatment will involve therapeutic
+			services designed to integrate all facets of a client’s health. This may include psychotherapy, individual
+			and group therapy. Holistic therapy may also be included to address the spiritual component that’s so important
+			to full recovery.</p>
+			<br>
+
+		</div>
+		<hr>
+
+        <div class="row">
+			<h2>AN OPIOID ADDICTION TREATMENT CENTER KIAMBU NEEDS</h2>
+
+				<p class="para3">
+					What should you expect in opioid addiction treatment? Whether you’re able to opt for medication-assisted
+					detox or not, effective rehab involves a full spectrum of treatment. Simply detoxing isn’t enough because
+					it only deals with the physical part of getting clean. You still have mental and emotional needs that
+					must be addressed. An opioid addiction treatment center California residents can rely on takes a
+					comprehensive approach to care. This means digging into the deep-seated issues that contribute to addiction.
+					It also requires teaching clients valuable skills they can use to handle stress and negative emotions
+					for the rest of their lives. Instead of turning to drug and alcohol abuse to feel better about themselves
+					or to bury the pain of past traumas, they’ll have the necessary tools to acknowledge and accept their feelings.
+					And they’ll have better ways to cope with the inevitable stressful situations that everyone faces at some point.</p>
+
+		</div>
+		<hr>
+
+        <div class="row text-center">
+		<h2>BUILDING A STRONG FOUNDATION FOR LASTING RECOVERY</h2>
+		<p class="para3">What should you expect in opioid addiction treatment? Whether you’re able to opt for
+			medication-assisted detox or not, effective rehab involves a full spectrum of treatment. Simply detoxing isn’t
+			enough because it only deals with the physical part of getting clean. You still have mental and emotional
+			needs that must be addressed. An opioid addiction treatment center California residents can rely on takes
+			a comprehensive approach to care. This means digging into the deep-seated issues that contribute to addiction.
+			It also requires teaching clients valuable skills they can use to handle stress and negative emotions for the
+			rest of their lives. Instead of turning to drug and alcohol abuse to feel better about themselves or to bury
+			the pain of past traumas, they’ll have the necessary tools to acknowledge and accept their feelings.
+			And they’ll have better ways to cope with the inevitable stressful situations that everyone faces at some point.</p>
+		</div>
+		<br>
+		<hr>
+
+                <div class="row text-center">
+		<h2>BUILDING A STRONG FOUNDATION FOR LASTING RECOVERY</h2>
+		<p class="para3">
+			At Pillars Recovery in Orange County, California, young professionals can get the compassionate, comprehensive
+			addiction treatment they need. From a addiction detox program to opioid addiction treatment, clients can rebuild
+			their lives on a solid foundation.
+The services we offer include:
+•	Withdrawal management
+•	Residential treatment
+•	Addiction detox program
+•	Art therapy
+•	LGBTQ affirmative addiction treatment
+Are you ready to begin your recovery from addiction in a safe and comfortable environment? Reach out to our supportive
+			professionals today at 866-786-0046, and we’ll start you on the path to long-term health and wellness.</p>
+		</div>
+		<br>
+		<hr>
+
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

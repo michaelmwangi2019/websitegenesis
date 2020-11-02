@@ -1,0 +1,235 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Detox {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<!--<h2 style="padding-left:23%; padding-bottom:2%; font-size:25px;"> RESIDENTIAL TREATMENT </h2>-->
+
+
+<style>
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 21%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  border-radius: none;
+}
+</style>
+
+<div class="bg-text">Residential Treatment</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 80px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">When you begin your addiction recovery journey, it’s important to find a treatment facility that
+            meets your needs. Often, people struggling with substance abuse have triggers in their life that can cause the abuse.
+            Being around these triggers can make recovery very difficult and put an individual at a high risk for relapse.
+            Luckily, Genesis Sober offers residential treatment programs to help individuals focus their energy on treatment.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>WHAT IS RESIDENTIAL TREATMENT?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/6.jpg' %}" alt="Photo 1" style="width: 400px; height:250px; float: right;">In residential treatment, clients live at the facility where they receive treatment. In these residences,
+            clients typically don’t have access to the outside world, allowing them to focus all of their energy on recovery.
+            This also separates individuals from any people or situations that could trigger a relapse.
+            Residential treatment also surrounds individuals with others who are going through the same struggles.
+            Addiction can be an incredibly isolating disease, so it may seem like you’re all alone on your recovery journey.
+            At Genesis Sober, our comfortable and inviting atmosphere makes it easy to connect with others and build support
+            networks that you can rely on throughout treatment.
+            The typical length of stay for a residential treatment program Genesis Sober provides is about 30 days.
+            At Genesis Sober, we require our clients to stay at least this long so that they receive a full continuum of care.
+            Before and during your stay, our team will evaluate your health and progress to determine the ideal duration of your
+            individualized plan.</P>
+
+            </div>
+		</div>
+
+
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>BENEFITS OF INDIVIDUALIZED TREATMENT</h2>
+		<p class="para3">Everyone has a unique experience and journey with addiction. Since everyone is different,
+            we also believe in individualizing everyone’s treatment regimens. When it comes to a residential treatment
+            program Genesis Sober is unmatched in its dedication to personalized care.
+            This means that whether you need a drug and alcohol detox during your stay or you need to transition to an
+            intensive outpatient program after your stay, the professionals at Genesis Sober will work with you to
+            determine the best path for your recovery journey.
+            Additionally, this residential treatment program Genesis Sober offers has a large variety of substance abuse
+            treatment
+            programs. Regardless of what type of substance you have an addiction to, the Genesis Sober team has a treatment
+            plan that can help you.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>DETERMINE THE RIGHT PROGRAM FOR YOU</h2>
+
+				<p class="para3">
+					At Genesis Sober, our priority is you. We will meet you where you are on your journey and determine the
+                best treatment plan for you. This residential treatment program Genesis Sober offers has a full
+                continuum of care and comprehensive addiction treatment programs. However, it’s not for everyone.
+                Luckily, we also offer several other programs, including:
+
+Intensive outpatient program
+Partial hospitalization program
+Dual diagnosis treatment
+To learn more about what Genesis Sober can do for you, call us today at 866-786-0046.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+		<h2>BEGIN YOUR JOURNEY</h2>
+		<p class="para3">At Genesis Sober, we’re here to guide you on a journey to healing from addiction. Our caring and
+            compassionate counselors
+			are ready to work with you to reach your goals. Furthermore, we treat people, not just disease. We’re experts
+            at helping
+			you find and heal from the traumas that facilitate addiction and relapse. Some of the programs we offer include
+            the following:<br>
+		  <ul class="d" style="font-size:16.5px;">
+		    <li>Comfort Detox</li>
+		    <li>Triple Diagnosis™</li>
+		    <li>Dual diagnosis treatment</li>
+		    <li>Intensive outpatient program</li>
+		    <li>Partial hospitalization program</li>
+		    <li>Substance abuse treatment</li>
+		  </ul>
+		</p><br>
+		<p class="para3">When you’re ready to begin your recovery journey, reach out to us. We’re available 24/7 to answer any questions you have about your recovery.
+		Call today at 0723-865-762 to learn more about Genesis Sober and how we can help you achieve a fulfilling and successful life.</p>
+		</div>
+		<hr>
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+
+{% endblock %}

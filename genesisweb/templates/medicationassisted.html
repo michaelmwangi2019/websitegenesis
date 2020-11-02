@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Locations {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 580px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Medication Assisted Program</div>
+
+
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">In recent years, scientists have made new developments in addiction therapy. Naltrexone treatment
+            is a kind of medication-assisted treatment. Now, naltrexone is a popular addition to rehab and detox programs
+            throughout the country. Rehabs typically use this treatment for alcohol and opioid addictions.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>WHAT IS NALTREXONE TREATMENT?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width: 400px; height:250px; float: right;">
+          Like a Suboxone treatment program, a naltrexone treatment program works to help clients overcome their alcohol
+          or opioid addiction. When someone suffers from alcohol abuse and takes naltrexone, a naltrexone shot works to
+            remove the individual’s craving for alcohol. If someone takes naltrexone for opioids, it actually works to
+            counteract the effect of painkillers on the brain. Companies sell naltrexone under brand names like Depade,
+            Revia and Vivitrol. While naltrexone treatment helps with addiction recovery, it does not treat withdrawal
+            symptoms. This medication is extremely useful for relapse prevention because it reduces the person’s cravings
+            for alcohol. By doing this, the medication can help someone stay sober while they detox. For opiate drugs,
+            a naltrexone shot actually blocks how the drug works in the brain. This happens because naltrexone is an opiate
+            antagonist. It basically competes with drugs like heroin and cocaine in the mind. By using the opiate receptors
+            first, naltrexone prevents someone from experiencing euphoria when they use opiates. Naltrexone can sometimes
+            cause side effects like headaches, tiredness, nausea or problems sleeping. Some individuals may also experience
+            anxiety or dizziness. Since naltrexone blocks the effects of opiates, some people may also experience mild
+            opiate withdrawal symptoms as well.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>GETTING NALTREXONE IN A REHAB PROGRAM</h2>
+		<p class="para3">In rehab, a naltrexone shot is a common part of a medication-assisted treatment program (MAT).
+            This kind of treatment program uses traditional therapies like psychotherapy and cognitive behavioral therapy
+            (CBT) with medications like naltrexone. Unlike drugs like methadone, naltrexone does not have the potential
+            for abuse. Instead, it helps to counteract opioid effects and reduce alcohol cravings. For naltrexone treatment
+            to work, clients have to use it consistently. Luckily, rehab centers can help by providing medical supervision
+            and support. Often, the treatment center will also offer different therapies, counseling options, and relapse
+            prevention techniques. People can get naltrexone treatment through an inpatient program or a transitional
+            living program. It is important to use a professional naltrexone treatment program at a rehab or a doctor’s
+            office. One of the biggest risks of naltrexone involves overdoses. When someone takes naltrexone, they cannot
+            achieve the same effects when they use opiates as well. Because of this, some people may overdose on opioids
+            in an attempt to reach the same sense of euphoria. To reduce overdose risks, it is important to get professional
+            support during treatment. MAT programs are an extremely useful way to begin recovery, but clients need the
+            right supervision and medical care. With the right support, naltrexone and similar medications can help clients
+            become sober.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>DISCOVER REHAB PROGRAMS THAT WORK FOR YOU</h2>
+
+				<p class="para3">
+					Whether someone wants naltrexone treatment or talk therapy, the right rehab program is out there.
+                    After calling the rehab center, clients can talk to an addiction specialist about their situation.
+                    This specialist can help them determine which programs will work the best. At the treatment center,
+                    clients can find help through options such as:
+•	Residential, transitional living and outpatient programs
+•	On-site detox
+•	LGBTQ affirmative therapy
+•	Family and marriage counseling
+•	Massage and acupuncture
+•	Recreational and art therapy
+•	Psychotherapy, individual therapy, and group therapy
+You do not have to live with the guilt, pain, and stress of addiction forever. Through a naltrexone treatment program,
+                    addiction therapy and rehab, you can take the first step in overcoming your substance abuse disorder.
+                    To learn more about how Pillars Recovery can help you, call us today at 8667891652.</p>
+
+		</div>
+		<hr>
+
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+
+
+    {% endblock %}

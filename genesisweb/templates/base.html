@@ -70,14 +70,14 @@
 <body class="bg-info"><!--Background color for base-->
 
 <div class="row-mx-auto container-fluid">
-    <img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%;">
+    <img src="{% static 'images/pramic1.jpg' %}" alt="genesis" style="width:100%; height:12%;">
 </div>
 
 
 <style type="text/css">
 .navbar a:hover {
  background-color: #298A08;
- font-size: 17px;
+ font-size: 16px;
 }
 
 li.nav-item {
@@ -89,10 +89,6 @@ border-right: 1px solid #bbb;
 .nav-item {
 text-align: center;
 }
-
-
-
-
 
 
 .dropdown {
@@ -112,7 +108,7 @@ text-align: center;
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 12px;
   text-decoration: none;
   display: block;
 }
@@ -121,15 +117,13 @@ text-align: center;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-
-
 </style>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
 
     <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo/genesislogo3.jpg' %}" class="mx-auto rounded"></a>
 
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" style="font-size: 14px;">
 
       <div>
       <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">&nbsp;HOME &nbsp;</a></li>
@@ -140,45 +134,51 @@ text-align: center;
         </div>
 
       <div class="dropdown">
-      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices' %}">&nbsp;ADDICTION TREATMENT PROGRAMS</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'addictiontreatmentprogram' %}">&nbsp;ADDICTION TREATMENT PROGRAMS<span class="caret"></span></a></li>
           <div class="dropdown-content">
             <a href="{% url 'drugandalcoholdetox' %}">Drug and Alcohol Detox</a><hr>
-            <a href="#">Medication Assisted Treatment Program</a><hr>
-            <a href="#">Addiction Therapy Services</a><hr>
-            <a href="#">Residential Treatment Program</a><hr>
-            <a href="#">Inpatient Treatment Program</a><hr>
-            <a href="#">Partial Hospitalization Program</a><hr>
-            <a href="#">Aftercare Program</a>
-            <a href="#">Discharge Planning from Rehab</a>
+            <a href="{% url 'medicationassisted' %}">Medication Assisted Treatment Program</a><hr>
+            <a href="{% url 'addictiontherapy' %}">Addiction Therapy Services<span></span></a><hr>
+            <a href="{% url 'residentialtreatment' %}">Residential Treatment Program</a><hr>
+            <a href="{% url 'inpatienttreatment' %}">Inpatient Treatment Program</a><hr>
+            <a href="{% url 'partialhospitalization' %}">Partial Hospitalization Program</a><hr>
+            <a href="{% url 'aftercare' %}">Aftercare Program</a>
+            <a href="{% url 'transitionalliving' %}">Transitional Living</a>
+            <a href="{% url 'dischargeplanning' %}">Discharge Planning from Rehab</a>
         </div>
       </div>
 
       <div class="dropdown">
-      <li class="nav-item"><a class="nav-link" href="{% url 'treatment' %}">SUBSTANCE ABUSE TREATMENT</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'substanceabusetreatment' %}">SUBSTANCE ABUSE TREATMENT<span class="caret"></span></a></li>
           <div class="dropdown-content">
-            <a href="#">Alcohol Addiction Treatment</a><hr>
-            <a href="#">Marijuana Addiction Treatment</a><hr>
-            <a href="#">Heroin Addiction Treatment</a><hr>
-            <a href="#">Opioid Addiction Treatment</a><hr>
-            <a href="#">Drug Addiction Treatment</a><hr>
-            <a href="#">Painkiller Addiction Treatment</a>
+            <a href="{% url 'alcoholtreatment' %}">Alcohol Addiction Treatment</a><hr>
+            <a href="{% url 'marijuanatreatment' %}">Marijuana Addiction Treatment</a><hr>
+            <a href="{% url 'herointreatment' %}">Heroin Addiction Treatment</a><hr>
+            <a href="{% url 'opioidtreatment' %}">Opioid Addiction Treatment</a><hr>
+            <a href="{% url 'prescriptiondrug' %}">Prescription Drug</a><hr>
+            <a href="{% url 'drugaddictiontreatment' %}">Drug Addiction Treatment</a><hr>
+            <a href="{% url 'painkillertreatment' %}">Painkiller Addiction Treatment</a>
           </div>
       </div>
 
       <!--<div>
       <li class="nav-item"><a class="nav-link" href="#">&nbsp;DRUG AND ALCOHOL DETOX &nbsp;&nbsp; </a></li>
         </div>-->
+        <div class="dropdown">
+      <li class="nav-item"><a class="nav-link" href="#">SIGNATURE SERVICES<span class="caret"></span></a></li>
+          <div class="dropdown-content">
+            <a href="{% url 'signatureservices2' %}">Foundations</a><hr>
+            <a href="{% url 'traumaresilience' %}">OCD and Anxiety</a><hr>
+            <a href="{% url 'ocdanxiety' %}">Trauma and Resilience</a><hr>
+            <a href="{% url 'familytherapy' %}">Family Therapy</a><hr>
+            <a href="{% url 'psychotherapy' %}">Psychotherapy Treatment</a><hr>
+            <a href="{% url 'experientialtherapy' %}">Experiential Therapy</a>
+          </div>
+      </div>
+
 
         <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'detox' %}">&nbsp;DETOX &nbsp;&nbsp; </a></li>
-        </div>
-
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'locations' %}">&nbsp;LOCATIONS &nbsp;&nbsp; </a></li>
-        </div>
-
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">&nbsp;LIFE SKILLS &nbsp;&nbsp; &nbsp;</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'lifeskills' %}">&nbsp;LIFE SKILLS &nbsp;&nbsp; &nbsp;</a></li>
         </div>
 
         <div>
@@ -186,36 +186,21 @@ text-align: center;
         </div>
 
         <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">&nbsp;CONTACT US &nbsp;&nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="#">&nbsp;CONTACT US &nbsp;&nbsp; </a></li>
         </div>
 
         <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'applicant' %}"> &nbsp;ADMISSION &nbsp;  </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'applicant' %}"> &nbsp;1 &nbsp;  </a></li>
         </div>
 
         <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'disbursement' %}"> &nbsp;DISBURSEMENT &nbsp; </a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'disbursement' %}"> &nbsp;2 &nbsp; </a></li>
         </div>
 
         <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'tester' %}"> &nbsp;Code Tester &nbsp;  </a></li>
+      <!--<li class="nav-item"><a class="nav-link" href="{% url 'tester' %}"> &nbsp;Code Tester &nbsp;  </a></li>-->
         </div>
 
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'extracode' %}"> &nbsp;PAYMENTS &nbsp;  </a></li>
-        </div>
-
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'signatureservices2' %}">   1    </a></li>
-        </div>
-
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'traumaresilience' %}">   2    </a></li>
-        </div>
-
-        <div>
-      <li class="nav-item"><a class="nav-link" href="{% url 'ocdanxiety' %}">&nbsp; &nbsp;3&nbsp; &nbsp;</a></li>
-        </div>
 
     </ul>
 

@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Blog {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("img_snow.jpg"); }
+.img2 { background-image: url("img_girl.jpg"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  border: 8px solid #f1f1f1;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+}
+</style>
+
+<div class="bg-text">ALCOHOL ADDICTION TREATMENT</div>
+
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 60px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Alcohol is the most commonly abused substance in the United States. As a legal substance,
+            it’s easy to purchase, and it’s common in advertisements and movies. However, many people forget its dangerous
+            effects because of its commonality. If you struggle with an addiction to alcohol, alcohol addiction treatment
+            is necessary to help you reclaim your life.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>SIGNS OF ALCOHOL ADDICTION</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/6.jpg' %}" alt="Photo 1" style="width: 400px; height:250px; float: right;">
+            Alcohol consumption is a common part of American culture. From college parties to bars, many people encounter
+            alcohol at some point in their lives. However, many people don’t discuss the dangers that come with the
+            overconsumption of alcohol. Films, TV shows, and music often glamorize binge drinking. Unfortunately,
+            binge drinking and alcohol poisoning claim more lives than many people realize. The overconsumption of alcohol
+            can quickly lead to alcohol poisoning, overdose, and death. For individuals who survive this type of incident
+            and continue drinking, it can even lead to an alcohol addiction. Alcohol addiction occurs when a person cannot
+            control how much alcohol they consume. Even if they realize they have a problem, they can’t stop themselves from
+            drinking alcohol. Often, this is because they experience withdrawal symptoms that they can only quell by consuming alcohol.
+            In addition to withdrawal symptoms, other signs of alcohol addiction include:
+            Cravings
+•	Neglecting responsibilities in favor of alcohol
+•	Reckless behavior when consuming alcohol
+•	Wanting to stop drinking but being unable to
+•	Continuing to drink despite the problems it causes
+•	Failing relationships with friends and family due to drinking
+If you or someone you love presents any of these signs, then they need alcohol addiction treatment today.</P>
+
+            </div>
+		</div>
+
+
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>WHY DO I NEED ALCOHOL ADDICTION TREATMENT?</h2>
+		<p class="para3">Some people believe they don’t need alcohol addiction treatment because they have control over
+            their drinking. However, thinking you have control isn’t the same as actually having control. Consuming any
+            amount of alcohol to control withdrawal symptoms or cravings is a significant sign of alcohol addiction.
+            Furthermore, without the best alcohol addiction treatment center California offers, alcohol consumption can
+            eventually cause severe harm to the body. Over time, the liver gets worn out from processing large amounts
+            of alcohol. This can lead to cirrhosis and liver failure. Alcohol consumption can also lead to kidney failure, gastritis, high blood pressure, nerve damage, and cancer. Failing to address this addiction early enough can lead to severe, irreversible damage.
+</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>CHOOSE THE BEST ALCOHOL ADDICTION TREATMENT CENTER KIAMBU PROVIDES</h2>
+
+				<p class="para3">When it comes to finding the best alcohol addiction treatment center California has to offer,
+                    there’s no need to look further than Pillars Recovery. Our addiction treatment facility works hard
+                    to meet individuals and families struggling with addiction where they are. From there, we help them
+                    begin the road to recovery and live fulfilling lives. We offer a broad range of addiction treatment
+                    programs to help individuals begin their journeys, including:
+•	Addiction detox program
+•	Drug and Alcohol detox
+•	Residential treatment
+•	Intensive outpatient program
+•	Partial hospitalization program
+•	Dual diagnosis treatment
+To learn more about our facility and what we can do to help you, call us now at 866-790-1930. Don’t let substance abuse
+                    control your life and begin the alcohol addiction treatment you need today.</p>
+
+		</div>
+		<hr>
+
+		<hr>
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+    {% endblock %}

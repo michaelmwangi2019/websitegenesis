@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Contact Us {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block content %}
+
+
+<style>
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 570px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">PARTIAL HOSPITALIZATION</div>
+
+
+
+
+<style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Addiction is not predictable. No one begins using substances because they expect to develop an
+			addiction. Often, it happens without warning and interferes with a person’s quality of life. Furthermore,
+			not everyone is able to pursue addiction treatment while leaving their obligations behind. To help these
+			individuals, Pillars Recovery offers a comprehensive partial hospitalization program.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>HOW IS A PARTIAL HOSPITALIZATION PROGRAM DIFFERENT?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width: 400px; height:250px; float: right;">
+         Unlike a residential treatment program, individuals in a partial hospitalization program do not live at the
+			facility where they’re receiving treatment. Instead, they live at home or in a sober living facility.
+			This allows our clients a degree of freedom while they pursue treatment. By living at home, clients can
+			continue to be responsible for their obligations. This may include family, schoolwork, jobs, or pets.
+			For busy individuals who can’t afford to remain at a treatment facility 24/7, this PHP Orange County offers
+			may be the perfect solution. For those interested in getting away from their home environment, they have the
+			option of staying in a sober living home. These homes contain other individuals in recovery and do not allow
+			the use of substances. Therefore, there is no temptation within these residences. Furthermore, clients can
+			practice life skills, such as cooking and cleaning, to help prepare them to reintegrate into everyday life.
+			A partial hospitalization program can also act as an excellent step-down program for someone leaving a
+			residential treatment program.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>TREATMENT METHODS AT THE BEST PHP KIAMBU OFFERS</h2>
+		<p class="para3">Clients spend the majority of their days at a PHP Orange County CA offers and only return to
+			their homes at night. During the duration of their treatment, they have the opportunity to engage in
+			a number of treatment modalities and techniques. At Pillars Recovery, we also offer several addiction
+			treatment programs, including:
+•	Addiction detox program
+•	Drug and Alcohol detox
+•	Medication assisted treatment
+•	Group therapy
+•	Dual diagnosis treatment
+•	Holistic chronic pain management
+No matter what you suffer from, Pillars Recovery will help you develop an individualized plan that works perfectly for
+			your recovery journey. In a PHP Orange County CA provides, you can get all of the treatment modalities you
+			need while living independently.
+
+</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>START YOUR JOURNEY WITH PILLARS RECOVERY TODAY</h2>
+
+				<p class="para3">
+					At Pillars Recovery, we’re tired of treatment centers that treat their clients like numbers.
+					At our facility, you’re an individual. We assess your unique circumstances to develop the perfect
+					treatment regimen for you. Whether you need a partial hospitalization program and dual diagnosis
+					treatment or a residential treatment program with chronic pain management, we’ll help you determine
+					the best course of action for your recovery. Find out what Pillars Recovery can do for you and your
+					family today by calling us at 866-790-1930. Don’t let addiction control your life. Get started on
+					a journey of transformation.</p>
+
+		</div>
+		<hr>
+
+
+
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+
+
+    {% endblock %}

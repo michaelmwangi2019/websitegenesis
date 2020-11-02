@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 27.25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 800px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Prescription Drug Addiction Treatment</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Your slip into prescription drug abuse was slow. It started with a legitimate doctor’s order,
+            or maybe a friend turned you on to some pills. Eventually, you started taking the medications in an off-label way.
+            Prescription drug addiction treatment at Pillars Recovery can help you stop the chemical dependency you now struggle with.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>DO YOU NEED PRESCRIPTION DRUG ADDICTION TREATMENT?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            When talking about prescription abuse, most people immediately think about opioid painkillers. At the Pillars
+            Recovery prescription drug addiction treatment center California locals trust, we frequently see clients with
+            this condition. They typically started taking the medication the way a doctor prescribed it. Somewhere along the way,
+            they developed a chemical dependency. However, prescription painkiller addiction treatment isn’t the only need
+            our clients have. Some also fall victim to stimulants. Examples include so-called smart drugs like Ritalin or Adderall.
+            Another group of prescriptions with an abuse potential consists of nervous system depressants. These may include
+            benzos that you might take for anxiety. Others receive the prescriptions for insomnia. That said, the most common
+            reason for prescription drug addiction treatment is a dependency on opioids. Besides that, there may be polysubstance
+            abuse issues involving these drugs as well as alcohol.</P>
+
+            </div>
+		</div>
+
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>HOW TO DEAL WITH AN ADDICTION TO PAINKILLERS</h2>
+
+				<p class="para3">
+					Off-label use of pain pills may involve snorting or injecting the drugs. You’re chasing the euphoric high.
+                    Similarly, you take regular overdoses. Because one doctor may not write enough scripts to meet your needs,
+                    you may buy the pills elsewhere. It scares you that you’re going to such great lengths to secure the
+                    drugs you now need. You might try cutting back. We routinely see people at our prescription drug addiction
+                    treatment center California relies on when they can’t quit. It worries them that they’re powerless to stop
+                    a habit they thought was under their control.</p>
+
+		</div>
+		<hr>
+
+		<div class="row">
+		<h2>BEGINNING TREATMENT</h2>
+		<p class="para3">
+			Prescription drug addiction treatment takes on multiple steps. It starts with an assessment of the dependency’s extent.
+            This step assures that you receive the customized treatment you need to quit using. Next, you ease into therapy
+            with a medically supervised detoxification. In the process, you break the physiological addiction. Medical experts
+            prevent painful withdrawal symptoms. Similarly, they help you overcome cravings. Therefore, you continue with
+            the healing process until your body no longer believes it needs the prescriptions to survive. If you enroll
+            in a prescription painkiller addiction treatment program, a second component focuses on holistic pain management.
+            People who started taking opioids for pain relief still need help managing discomfort. Pillars Recovery introduces
+            you to non-opioid means of handling the discomfort you struggle with. Furthermore, some of the modalities of drug
+            addiction treatment may also assist with that. Examples include:
+•	Behavioral therapy that lets you pinpoint areas of dysfunction and supplant them with healthy trigger responses
+•	Psychotherapy, which introduces care of co-occurring mental health disorders that contribute to pill abuse or psychosomatic pain
+•	Family counseling as a way to deal with codependency, communication issues, and role disparities
+•	Experiential therapies that explore non-verbal ways of communicating feelings and thoughts
+•	Holistic care that supports prescription painkiller addiction treatment with alternative ways of managing discomfort
+It’s noteworthy that prescription drug addiction treatment for other types of medication may start with a similar approach.
+            Typically, all substance abuse treatment programs begin with an addiction detox program and withdrawal management.
+            Customization and ongoing assessments determine the right course of action for your individual needs.</p>
+			<br>
+
+		</div>
+		<hr>
+
+        <div class="row">
+			<h2>THERE’S NEVER A BAD TIME TO GET HELP</h2>
+
+				<p class="para3">
+					Pillars Recovery is the prescription drug addiction treatment center California talks about. It features
+                    an intensive detox, rehab, and aftercare setup. Don’t wait until the New Year or some other time to
+                    go after healing. Finally, begin your prescription drug addiction treatment today by calling 866-789-1652 now.</p>
+
+		</div>
+		<hr>
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

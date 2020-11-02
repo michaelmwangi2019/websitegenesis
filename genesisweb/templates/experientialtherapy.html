@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20.75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 600px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Experiential Therapy Program</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Counselors and psychologists use experiential therapy for mental illnesses like behavior disorders,
+            trauma, and eating disorders. This kind of treatment is also useful for helping people recover from grief,
+            trauma or loss. Because of the way it works, this kind of therapy is a popular part of substance abuse recovery programs.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>WHAT IS EXPERIENTIAL THERAPY?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            An experiential therapy program helps any problem that involves breaking free of negative feelings and
+            perceptions about the past. This might be unhappy or painful feelings about an addiction, trauma, a past
+            relationship, grief or something else. Furthermore, to help people recover, a trained therapist guides the
+            client as they explore these negative feelings of hurt, anger or pain. They can also help the client release
+            negative emotions and discover blocked feelings. Experiential therapy uses a variety of tools to help people
+            recover. In an experiential therapy program, clients may do activities like role-playing, guided imagery,
+            music, props or animal care. Some programs use arts and crafts to help clients re-enact emotional events
+            from the person’s past.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>THE IDEA BEHIND THE PROCESS</h2>
+
+				<p class="para3">
+					The theory behind experiential therapy is that someone’s perception of the past can determine how
+                    they act in the present. This is why an experiential therapy program focuses so much on releasing
+                    negative feelings from the past. By changing negative emotions, individuals can change their
+                    perception of reality. With substance abuse treatment, this kind of therapy works to prepare the
+                    individual for life outside of treatment. Unlike detox, it does not directly treat the medical or
+                    physical aspects of substance abuse. Instead, it helps clients learn how to rethink their lives,
+                    relationships and feelings about certain events. It is especially useful for people who have problems
+                    talking to other people during traditional talk therapy. Of course, researchers know that experiential
+                    therapy and other expressive therapies are a powerful way to develop insight and reduce denial issues.
+                    Expressive therapies help people develop insight and achieve a more cooperative, positive approach to
+                    treatment. Adventure therapy and similar options help clients solve problems as a group. This kind of
+                    program also helps individuals work as a team, express their feelings and develop trust. Specific
+                    therapy options like using dogs in treatment are also useful for helping clients, therapists and
+                    other group members develop a close bond. This bond is a therapeutic alliance that helps everyone
+                    involved reach their treatment goals. Additionally, equine therapy offers similar benefits. Through
+                    these kinds of treatment options, individuals are able to progress in their treatment better and form
+                    stronger connections to other people in their recovery program.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+		<h2>STARTING ADDICTION TREATMENT AND GOING THROUGH DETOX</h2>
+		<p class="para3">
+            No matter what type of treatment someone needs, there are a variety of addiction rehab programs that can help.
+            These treatment programs offer everything from residential treatment to experiential therapy options. Clients
+            can get help going through detox safely before they continue on to additional therapy programs.
+Finding the right rehab does not have to be a challenge. At a treatment center, clients can find unique options such as:
+•	Group and individual therapy program
+•	Massage therapy
+•	Art therapy, acupuncture, and recreational therapy
+•	Family counseling and marriage counseling
+•	Residential treatment and transitional living programs
+•	On-site detox programs
+•	LGBTQ affirmative therapy
+If you or a loved one is struggling to treat an addiction, you do not have to go through the process alone. High-quality,
+            evidence-based treatment can help you begin your personal journey toward a sober lifestyle. Through Pillars
+            Recovery, you can immediately start the detox, rehab and therapy programs you need to achieve your goals.
+            Learn more about everything we have to offer by calling us at 8667891652.</p>
+            <br>
+
+		</div>
+		<hr>
+
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

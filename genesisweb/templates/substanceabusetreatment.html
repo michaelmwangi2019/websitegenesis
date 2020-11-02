@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Signature Services {% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Substance Abuse Treatment</a></li>
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 570px;
+  padding: 10px;
+  text-align: center;
+}
+
+#h3para{
+padding-top: 50px;
+
+font-size: 26px;
+}
+p.pfound2{
+font-size: 18px;
+line-height: 1.8;
+padding: 30px;
+}
+</style>
+
+<div class="bg-text">Substance Abuse Treatment</div>
+
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md bg-light text-dark text-center">
+        <h3 class="font-weight-bold" id="h3para">Substance Abuse</h3><br>
+        <p class="pfound2" align="right lead">
+            Genesis Sober exists to help you on your recovery journey with compassion and care in a luxurious,
+            distraction-free setting. We offer comprehensive substance abuse treatment programs and our medically-managed
+            Comfort Detox that focuses on easing the painful symptoms associated with withdrawal.
+        </p>
+    </div>
+
+    <div class="col-md bg-light">
+    <style>
+.flip-box {
+  background-color: transparent;
+  width: 680px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="{% static 'images/imgcousel4.jpg' %}" alt="Photo" style="width:680px;height:350px;">
+            </div>
+            <div class="flip-box-back">
+                <h1>Substance Treatment</h1>
+                <h3>“We have crafted drug and alcohol recovery programs that utilize the latest addiction treatment
+                    methods in a compassionate, comfortable setting.”</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" align="center">
+    <style>
+        h1{
+        padding: 45px;
+        font-size: 38px;
+        color: white;
+        }
+
+        .pfound{
+        padding-top: 30px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        h3{
+        font-family: Segoe UI;
+        font-size: 24px;
+        }
+
+    </style>
+    <div class="col-lg">
+        <h1>OUR APPROACH</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md bg-white">
+        <p class="pfound">Our residential drug and alcohol treatment programs are designed around your specific needs
+            and utilizes the latest in holistic and evidence-based practices. We orient ourselves around what you need
+            to achieve long-term recovery. Your personalized treatment plan will help you realize your own goals for
+            your new life in recovery. We will work with you one-on-one to ensure that we meet your expectations during
+            treatment. Another substance abuse treatment program we offer is Triple Diagnosis™. We created our Triple
+            Diagnosis™ chronic pain treatment program to address the specific needs of people who suffer from chronic
+            pain and are chemically dependent on prescription medication. Our medical staff will assist with detoxifying
+            the body while using a mix of holistic and medical methods to manage pain. Triple Diagnosis™ treatment is the
+            most comfortable and compassionate program aimed at healing the body from prescription pain medication dependency.
+            The aftercare programs at Pillars Recovery foster your newfound recovery and facilitate your transition back
+            to normal life. We offer a Partial Hospitalization Program (PHP) that meets during the days on weekdays, or
+            you may opt for an Intensive Outpatient Program (IOP) that meets several times a week for just a few hours.
+            Our admissions coordinator can help you decide which program is right for you. Our treatment programs and
+            facilities are all state licensed, professionally supervised, and Joint Commission accredited.
+        </p>
+        <br>
+
+        <h3><font color="#01A9DB">COMFORT DETOX</font></h3>
+        <p class="pfound">For most people in a substance abuse treatment program, chemical detox is the most uncomfortable
+            part of the recovery process. The withdrawal symptoms can at times be daunting, or downright painful. Our
+            Comfort Detox program provides our guests with the greatest amount of relief from symptoms. Our team of doctors
+            and licensed addiction professionals will tend to your every need and discomfort during the detoxification process.
+            Detoxification can be a dangerous process if attempted outside the supervision of a licensed medical professional.
+            Our Comfort Detox clients have around-the-clock medical monitoring and supervision. Comfort Detox utilizes a
+            variety of proven and trusted methods to help ensure your health and safety throughout the detoxification process.
+            Detoxification can be a dangerous process if attempted outside the supervision of a licensed medical professional.
+            Our Comfort Detox clients have around-the-clock medical monitoring and supervision. Comfort Detox utilizes a
+            variety of proven and trusted methods to help ensure your health and safety throughout the detoxification process.
+        </p>
+        <br>
+
+        <h3><font color="#01A9DB">RESIDENTIAL DRUG AND ALCOHOL TREATMENT PROGRAMS</font></h3>
+        <p class="pfound">We do addiction treatment differently. We have no single process that everyone goes through,
+            nor do we herd you like cattle from one 12-step meeting to the next. Each individual is thoroughly assessed
+            upon arrival and together we design a unique treatment program to achieve your goals and expectations for recovery.
+            From initial assessment to discharge, Pillars Recovery professionals utilize a variety of treatment methods
+            which may include the following:
+•	Clinically managed Comfort Detox
+•	30-60-90 day residential drug and alcohol treatment programs
+•	Psychiatric care for co-occurring disorders
+•	Specialized holistic chronic pain management protocols
+•	LGBTQ affirmative addiction treatment
+•	Individual therapy sessions
+•	Group therapy sessions
+•	Marriage and family counseling
+•	Acupuncture and massage therapy
+•	Art therapy sessions
+•	Recreational activities
+•	Aftercare and transitional planning
+The minimum length of stay at Pillars Recovery is 30 days, however we recommend a stay as long as possible to help ensure
+            your success in recovery. During your initial and subsequent assessments, we’ll discuss your need for treatment
+            and recommend a length of stay that works for you. If you have questions about payment or insurance, we have
+            a variety of resources available to us to get you the help you need. More information is available on the
+            Insurance page.</p>
+        <br>
+
+        <h3><font color="#01A9DB">TRIPLE-DIAGNOSIS™ CHRONIC PAIN MANAGEMENT & TREATMENT</font></h3>
+        <p class="pfound">Chronic pain and prescription addiction have long been a challenge in traditional substance abuse
+            treatment centers. Removing the pain management medications often means that detox is more uncomfortable and
+            pain may become unmanageable during the process. To combat this, we’ve created a Triple-Diagnosis™ treatment
+            program to work around the unique needs of people who suffer from long-term chronic pain. We utilize a variety
+            of holistic and medical treatment methods to combat chronic pain while learning how to live independent of
+            often harmful prescription pain medication. Our focus through our Triple-Diagnosis™ program is truly to
+            holistically treat the disease of addiction through mind-body-spirit healing.
+        </p>
+        <br>
+
+        <h3><font color="#01A9DB">AFTERCARE & FAMILY PROGRAMS</font></h3>
+        <p class="pfound">In addition to our detox and substance abuse treatment programs, we offer a variety of resources
+            to you to help you maintain your sobriety once you leave primary treatment. Our Partial Hospitalization Program
+            (PHP) is a solid way to continue treatment while living at home or in sober living. It offers more freedom than
+            residential treatment, while still providing support to those new to recovery. Our Intensive Outpatient Programs
+            (IOP) are a great way to ease back into normal life. You may return to your normal daily schedule of work or
+            school while attending IOP during the hours most convenient for you. At any point during your stay at Genesis
+            Sober, we offer marriage and family therapy as well as group sessions to help you heal the relational wounds
+            caused by addiction.
+        </p>
+        <br>
+
+        <h3><font color="#01A9DB">OUR ADMISSIONS COORDINATORS ARE AVAILABLE 24/7</font></h3>
+        <p class="pfound">We encourage you not to delay your recovery. Addiction is a deadly disease, yes. However, every
+            moment that passes is another moment that you could be living life to its fullest in recovery. Our desire is
+            to see you heal from active addiction and achieve the life you deserve. All of our programs are available
+            together, or independently. If you are looking for PHP or IOP programs please contact one of our admissions
+            coordinators who can help you determine which program is right for your specific situation. You are invited
+            to call us to learn more about our substance abuse treatment programs. We’re here to help you recover.
+            Contact Pillars Recovery today at 866-789-1652.</p>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <style>
+        .btnz {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  width: 200px;
+}
+
+.btnz:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+    </style>
+    <div class="col-md">
+        <p class="pfound">CONTACT US TO FIND MORE ABOUT OUR PROGRAM</p>
+        <a href="{% url 'learnmore' %}"><button class="btnz">Contact Us</button></a>
+    </div>
+
+</div>
+
+{% endblock %}

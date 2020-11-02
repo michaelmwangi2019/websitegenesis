@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 13.25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 370px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Transitional Living</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Rehab for drug and alcohol addiction takes different forms. The type of treatment plan you receive
+            should be personalized for you. This ensures the most effective care that can lead to lower relapse rates
+            and higher chances of a successful recovery. After residential treatment, transitional living may be appropriate.
+            This type of program provides additional options and benefits when inpatient treatment ends.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>MOVING FROM RESIDENTIAL TREATMENT TO TRANSITIONAL LIVING</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            You don’t always have to live in an addiction treatment center for residential or inpatient rehab.
+            Some clients receive outpatient or transitional care. They may either take part in transitional treatment
+            after a residential rehab stay, or they may receive this type of treatment because their addiction issues
+            are minor and very short-term. It can be a step down from a 24/7 rehab stay, with ongoing clinical services.
+            Clients will attend therapy sessions anywhere from a few to several times per week. As their recovery progresses,
+            they’ll attend fewer meetings. Furthermore, if you’re looking for a quality transitional living program Orange
+            County CA offers, you have a variety of effective options.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>BENEFITS AND DRAWBACKS OF TRANSITIONAL LIVING IN ADDICTION RECOVERY</h2>
+
+				<p class="para3">
+					Not everyone needs or can afford 24/7 rehab care. While residential treatment is usually best for
+                    clients with long-term, severe addiction issues, some people haven’t used that long or have mild
+                    dependency problems. Transitional living gives them the chance to overcome drug and alcohol addiction,
+                    but it also allows them to continue fulfilling work or other obligations. For professionals with
+                    demanding careers, this type of treatment may also be the only way they can get the help they need
+                    because taking time away from their job isn’t possible. Furthermore, they return home to sleep at night,
+                    where they’ll be in comfortable surroundings. If their home environment is toxic, however, they may
+                    reside in a sober living home during treatment. Clients have more freedom in transitional treatment,
+                    which is something they’ll have to adjust to after leaving the safe environment of residential rehab.
+                    They must learn to manage triggers and stressors, not just in the short term but for the rest of
+                    their lives. By easing into a post-rehab life in a transitional program, they can also do this gradually.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+		<h2>FINDING A TRANSITIONAL LIVING PROGRAM THAT SUITS YOU</h2>
+		<p class="para3">
+            Although clients have more freedom in transitional living, they must still participate in treatment to receive
+            the benefits of it. This means showing up for all therapy sessions and completing any homework assignments
+            counselors give them. Are you looking for the best transitional living program Orange County CA offers?
+            Whether you’re a busy professional who needs treatment that fits into your life or you’re ready to step down
+            from around-the-clock treatment, Pillars Recovery has quality options for you.</p>
+            <br>
+
+		</div>
+		<hr>
+
+        <div class="row">
+			<h2>DRUG AND ALCOHOL ADDICTION RECOVERY FOR YOUNG MEN AND WOMEN</h2>
+
+				<p class="para3">
+					In Orange County, young professionals can take part in state licensed, Joint Commission accredited
+                    addiction treatment programs at Pillars Recovery. Under professional supervision, clients will receive
+                    a full spectrum of personalized care, from Comfort Detox all the way through aftercare. If you’re seeking
+                    the most effective transitional living program Orange County CA provides, we offer that as well.
+Our programs include:
+•	Residential treatment program
+•	Intensive outpatient program (IOP)
+•	Medication assisted treatment
+•	Partial hospitalization program (PHP)
+•	LGBTQ affirmative therapy
+•	Massage therapy
+•	Acupuncture
+It’s not easy admitting that you need help for drug and alcohol addiction. But the compassionate professionals at our
+                    treatment facility are ready to guide you every step of the way toward better health and a brighter future.
+                    Reach out today at 866-789-1652, and we’ll support you throughout your recovery journey.</p>
+
+		</div>
+		<hr>
+
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

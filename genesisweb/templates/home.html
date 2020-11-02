@@ -85,9 +85,8 @@
         focus is on drugs addiction and mental health challenges such as crisis, trauma, loss and developmental difficulties.
         Genesis sober Community clients receive at least one individual psychotherapy session each week for the entire duration of treatment
         provided by licensed clinicians with years of experience. Our emphasis is on individual growth and resocialization facilitated by
-        community involvement through dynamic group experiences, <font title="Click here to find out more about the Family Therapy" color="blue"><a href="#">family therapy</a></font>, and experiential
-        learning activities.
-        </p>
+        community involvement through dynamic group experiences, <font title="Click here to find out more about the Family Therapy" color="blue">
+            <a href="{% url 'familytherapy' %}">family therapy</a></font>, and experiential learning activities.</p>
     </div>
 
     <div id="imagesoberexp" class="col-md bg-light">
@@ -204,7 +203,7 @@ cursor: pointer;
 }
 </style>
 
-        <a href="{% url 'learnmore' %}"><button class="btn">Learn More</button></a>
+        <a href="{% url 'aboutus' %}"><button class="btn">Learn More</button></a>
     </div>
 
     </div>
@@ -232,12 +231,12 @@ cursor: pointer;
 }
     </style>
 
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/home6.jpg' %}" class="img-trans"></a>
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/image011.jpg' %}" class="img-trans"></a>
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/masimba.jpg' %}" class="img-trans"></a>
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/image003.jpg' %}" class="img-trans"></a>
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/home8.jpg' %}" class="img-trans"></a>
-        <a href="{% url 'gallery' %}"><img src="{% static 'images/image009.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/6.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/5.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/4.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/2.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/8.jpg' %}" class="img-trans"></a>
+        <a href="{% url 'gallery' %}"><img src="{% static 'images/7.jpg' %}" class="img-trans"></a>
 
     </div>
 <br>
@@ -248,7 +247,7 @@ cursor: pointer;
         <h2 class="font-weight-bold h2para1 text-info">GENESIS SOBER <font color="black">PROGRAMS</font></h2><br>
             </div>
         <p id="soberprogrampara" class="para1" align="right lead" style="padding-top: 4px; padding-left: 15px; padding-right:10px; align-self:center; pointer-events: auto; font-size: 17px; line-height: 1.8;">
-            From our medically-managed Comfort Detox to our <font color="blue"><a href="#">after care</a></font> programs, Genesis Sober offers a
+            From our medically-managed Comfort Detox to our <font color="blue"><a href="{% url 'aftercare' %}" title="Click here to find out more about this program">after care</a></font> programs, Genesis Sober offers a
             full continuum of care to help you overcome your addiction. When you enter our facility,
             our team determines which programs will work best for you. Whether you need a Triple Diagnosis™ program
             or a Partial Hospitalization Program, Genesis Sober is ready to guide you in every step of the way toward recovery.

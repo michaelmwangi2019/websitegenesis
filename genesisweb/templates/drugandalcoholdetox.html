@@ -4,12 +4,10 @@
 {% load static %}
 {% block breadcrumb %}
 <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-<li class="breadcrumb-item active"><a href="{% url 'disbursement' %}">Disbursement Details</a></li>
 
 {% endblock %}
 
 {% block content %}
-<h2> DRUG AND ALCOHOL DETOX </h2>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,120 +23,283 @@
   /*border: 8px solid #f1f1f1;*/
   position: fixed;
   top: 22%;
-  left: 13%;
+  left: 17.5%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 350px;
+  width: 500px;
   padding: 10px;
   text-align: center;
 }
 </style>
 
-<div class="bg-text">Eating Disorder</div>
+<div class="bg-text">Drug and Alcohol Detox</div>
 
 
-<style>
+<!--ABOUT GENESIS SOBER-->
 
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
 }
 
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
 }
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  background-color: #bbb;
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
   color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
 }
 
-.flip-box-back {
-  background-color: #555;
+.btn:hover {
+  background-color: #01A9DB;
   color: white;
-  transform: rotateY(180deg);
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
 }
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
 </style>
 
-
-<h1>Image Flip with Text</h1>
-<h3>Hover over the image below:</h3>
-
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="{% static 'images/image010.jpg' %}" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-<h2>ADDICTION DETOX PROGRAM</h2>
-<p>Our clinically-managed detox program focuses in helping clients overcome withdrawal
-    symptoms efficiently as possible while prioritizing comfort and saftey.</p>
-    </div>
-  </div>
-</div>
-
-
-
-
 <div class="row">
-<div class="container-fluid">
 
-    <style>
-        .parallax {
-    background-attachment: fixed;
-    height: 400px;
-}
-#parallax1 {
-    background-image: url("{% static 'images/carousel4.jpg' %}");
-    background-size: cover;
-    background-position: 50% 50%;
-}
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Many people don’t realize that addiction directly affects a person’s physical and mental health.
+            Addiction is the combination of two types of dependencies: physical and psychological. Without proper care
+            and treatment, an individual won’t be able to end their substance abuse. At Genesis Sober, we offer a
+            comprehensive addiction detox program to help users end their physical dependencies.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>WHAT IS AN ADDICTION DETOX PROGRAM?</h2>
+            <div class="container-fluid">
 
-.parallax-content {
-    width: 100%;
-    padding: 0px 20px;
-    margin: 0 auto;
-    vertical-align:middle;
-    text-align:center;
-    height: 400px;
-}
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            The first step of the addiction treatment journey is addressing the physical dependence that addiction creates.
+            When a person uses a substance, it affects the chemical balance in their brain. For example, opioids like heroin
+            and morphine cause a rush of dopamine in the brain that creates a feeling of euphoria. Not only does this
+            pleasurable feeling cause users to pursue the substances again, but the brain also becomes dependent on these
+            surges of dopamine to function properly. When this physical dependence to a substance happens, an addiction
+            detox program becomes necessary. Despite popular belief, many drug users cannot simply stop using a substance.
+            Individuals who try to stop substance use without proper medical supervision will experience a range of withdrawal
+            symptoms, including:
+.   Fever and sweating
+•	Shakiness
+•	Hallucinations
+•	Paranoia and anxiety
+•	Nausea and vomiting
+These flu-like symptoms not only cause discomfort, but they can also adversely affect a person’s physical health.
+            Furthermore, a user often knows that the fastest way to stop these withdrawal symptoms is to use drugs again.
+            However, this relapse is likely to result in an overdose. The best addiction detox center Genesis Sober can
+            provide will help individuals overcome detox and withdrawal symptoms without endangering their lives.
+</P>
 
-.parallax-content p{
-    font-size: 72px;
-    color: #fff;
-    text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
-    font-family: Roboto-Bold, sans-serif;
-    text-decoration: underline;
-}
-    </style>
+            </div>
+		</div>
 
-<div class="parallax" id="parallax1">
-<div class="parallax-content">
-<p>Title here</p>
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>THE DETOX PROCESS</h2>
+
+				<p class="para3">
+					When an individual enters withdrawal, they will meet with an admissions specialist and detox team
+                    that helps them evaluate their addiction. Furthermore, after this evaluation, the team will help
+                    the individual through the withdrawal process. The detox process will vary depending on the type
+                    of substance, the severity of the addiction, the individual’s health, and the addiction detox program itself.
+                    Every facility approaches detox differently. At Pillars Recovery, we want you to consider us your
+                    home away from home. Detox is an uncomfortable process, so we work hard to open our doors to you and
+                    make your experience as safe and comfortable as possible. In our comfort addiction detox program,
+                    you’ll find a unique and individualized experience designed to keep you uplifted and also dedicated
+                    to your recovery.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+		<h2>WHAT TO EXPECT DURING DRUG DETOX</h2>
+		<p class="para3">Detoxification, or detox, is what happens when addictive substances leave the body. In some cases, people can quit cold turkey without serious adverse effects. Other times, it’s safer for a person to gradually taper off their use. Medication-assisted detox in a drug detox center may be necessary for certain instances, including opioid withdrawal.
+Whether your detox is mild or intense, you’ll experience some withdrawal symptoms, both physical and psychological. They may include:
+•	Anxiety and depression
+•	Nausea and vomiting
+•	Sleep disturbances
+•	Paranoia
+•	Tremors
+•	Exhaustion
+Typically, the worst of the symptoms occur during the first few days. After that, they gradually decrease. Even weeks and months later, it’s not unusual to feel residual effects of drug detox, including cravings and anxiety.
+
+		</p><br>
+
+		</div>
+		<hr>
+
+        <div class="row">
+			<h2>WHERE SHOULD YOU DETOX?</h2>
+
+				<p class="para3">
+					You may want to detox in the privacy of your own home, but it’s recommended to go through the process
+                    in a qualified drug detox center whenever possible. At-home detox may sound like the most comfortable,
+                    most inexpensive option, but it’s not necessarily the safest. Withdrawal symptoms may be severe,
+                    especially in cases of long-term addiction. Abruptly quitting can lead to devastating consequences,
+                    including death. You may detox in an inpatient or outpatient setting. Inpatient detox is best for those
+                    with long-term, serious addiction issues. Medical professionals will monitor clients 24/7 for their
+                    own health and safety. They may also administer medications that ease some of the discomforts of withdrawal.</p>
+
+		</div>
+		<hr>
+
+        <div class="row text-center">
+		<h2>IS DRUG DETOX ENOUGH?</h2>
+		<p class="para3">While drug detox is an important first step toward overcoming addiction, it’s not enough for a
+            person to simply stop using. Without getting to the root causes of addiction, chances for relapse are very high.
+            After getting clean in a drug detox center, the best thing to do is start with rehab, whether residential or outpatient.
+            There are other options as well, including Partial Hospitalization Programs (PHP) and Intensive Outpatient
+            Programs (IOP). Individual and group therapy sessions provide important insight into your substance abuse.
+            By working with addiction specialists, you can face past traumas and learn effective coping skills.
+            Armed with new tools and stress-relieving methods, you’ll be prepared to deal with cravings, negative emotions
+            and triggers in positive, productive ways.</p>
+		</div>
+		<br>
+		<hr>
+
+                <div class="row text-center">
+		<h2>WHAT TO EXPECT FROM ALCOHOL DETOX?</h2>
+		<p class="para3">Someone who decides to stop drinking has probably been thinking about it for a while. He may have had some issues, such as family problems or a DUI arrest. He knows his drinking is out of control, but it’s not easy to quit. When a person grows physically and psychologically dependent on alcohol, giving it up can be incredibly difficult.
+Alcohol detox is a necessary part of breaking that dependency.
+Detox is what happens when toxic or addictive substances leave the body. You’ll experience some withdrawal symptoms once you stop drinking. They may begin within a few hours of your last drink. Symptoms range in severity and may include:
+•	Headaches
+•	Anxiety
+•	Nausea
+•	Shakiness
+•	Disorientation
+•	Seizures (severe)
+•	Delirium tremens, or DTs (severe)
+Physical symptoms last anywhere from a few days to about one week. After the first week, people will feel better physically. However, they can continue to have cravings or feel depressed and anxious, possibly for months afterward.
+</p>
+		</div>
+		<br>
+		<hr>
+
+
+                <div class="row text-center">
+		<h2>SAFEST WAY TO ALCOHOL DETOX</h2>
+		<p class="para3">Withdrawal symptoms resulting from alcohol detox can be more than just uncomfortable. They can be life-threatening. For people with long-term alcohol addiction, detoxing at home is never recommended. It’s simply too dangerous.
+Going to an alcohol detox center is the best way to manage withdrawal. Medical professionals monitor clients and may administer drugs or IV fluids that ease physical symptoms.
+</p>
+		</div>
+		<br>
+		<hr>
+
+
+                <div class="row text-center">
+		<h2>DRUG AND ALCOHOL DETOX IS ONLY THE FIRST STEP</h2>
+		<p class="para3">Once a person is over the worst of her withdrawal symptoms, she’ll probably feel better physically than she has in a long while. However, the psychological effects don’t just go away. Her body and mind came to rely on the depressant effects of alcohol, and it takes some adjusting for her to function without it.
+After treatment at an alcohol detox center, the next thing clients should do is enter rehab. It may be inpatient or outpatient or a mix of the two, such as a Partial Hospitalization Program (PHP).
+During rehab, clients receive various therapeutic services. They must address the root causes of their addiction and learn coping mechanisms that help them avoid drug and alcohol abuse for the rest of their lives.
+</p>
+		</div>
+		<br>
+		<hr>
+
+
+                <div class="row text-center">
+		<h2>GENESIS SOBER CAN HELP YOU DETOX AND RECOVER FROM HEROIN</h2>
+		<p class="para3">At Pillars Recovery, we don’t just help people detox from heroin. Unlike a drug detox center that focuses solely on detox, we offer addiction rehab too. We find that offering both is a great way to help people truly recover from drug abuse.
+As a heroin detox center and addiction rehab facility, we offer a wide range of programs. However, these programs alone don’t make our service great. Our friendly and helpful staff make what we do possible. Some of the programs that our staff members use include:
+•	Transitional living
+•	Residential treatment
+•	Individual and group therapies
+•	Marriage and family counseling
+Don’t settle for facilities that only offer rehab or detox services. Let us teach you more about what makes us an excellent choice for heroin detox. Call Pillars Recovery at 866-790-1930 to get detox and rehab in the same location.
+</p>
+		</div>
+		<br>
+		<hr>
+
 </div>
-</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
 
 </div>
 
-</div>
 
     {% endblock %}

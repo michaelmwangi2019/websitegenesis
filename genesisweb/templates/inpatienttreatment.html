@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Locations {% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 580px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Inpatient Treatment Program</div>
+
+
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">When chemical dependency gets out of hand, an inpatient treatment program could be the solution.
+            Pillars Recovery therapists understand your struggle. They leverage evidence-based modalities and holistic
+            treatments to assist with your long-term recovery. Here’s how it works.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>YOU BEGIN RECOVERY WITH MEDICAL DETOX</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width: 400px; height:250px; float: right;">
+          Our residential treatment program starts with detoxification. During this process, you withdraw from the drug
+            or alcohol that snared you. Rather than suffering through cold turkey withdrawal at home with its early relapse
+            dangers, you withdraw in comfort. Consistent medical monitoring lets experts step in when you experience pain
+            or physiological symptoms that jeopardize your wellbeing. The Pillars Recovery inpatient treatment program
+            in Orange County CA emphasizes comfort and safety. Typically, it takes about a week to finish the withdrawal.
+            At the end of this time, your body no longer signals a need for the substance to survive. Therefore, you’re
+            now ready to begin the clinical aspect of treatment.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+		<div class="row text-center">
+		<h2>EVIDENCE-BASED PRACTICES MAKE UP THE CLINICAL CARE COMPONENT OF THE INPATIENT TREATMENT PROGRAM</h2>
+		<p class="para3">As you move over to the rehab portion of care, you focus on the psychological addiction.
+            Doing so protects you against future relapse. Similarly, it helps you understand what caused you to start
+            using in the first place. Therapists use several different modalities to help you gain a better understanding
+            of your triggers.
+Examples include:
+•	Psychotherapy, which provides individualized one-on-one interactions with a therapist
+•	Group therapy as a way to interact with peers, receive feedback, and overcome self-isolation
+•	Family counseling that seeks to repair strained relationships and reopens avenues of communication
+•	Recreational therapy as a way to have sober fun, explore new hobbies and socialize while building self-confidence
+•	Holistic wellness programs such as acupuncture and massage therapy that allow for whole-person healing
+Because therapists customize your care experience, they focus on your unique needs. For example, some people experience
+            chronic pain, which is a trigger for chemical dependency. Others struggle with underlying mental health
+            conditions. By teaching you to manage them, you remove a significant stressor.
+Participation in an inpatient treatment program isn’t dreary. Because there’s a lot of hard work, there must also be
+            some fun. Many people entering rehab need to relearn how to enjoy life without reaching for a substance.
+            Recreational therapy and similar experiences assist with this step.
+The Pillars Recovery inpatient treatment program in Orange County CA capitalizes on the natural surroundings for these
+            experiences. There, you recover close to the ocean. It provides you with opportunities for jet skiing,
+            whale watching, and so much more. Similarly, the serene setting is ideal for relaxation.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row">
+			<h2>WHAT HAPPENS AFTER TREATMENT?</h2>
+
+				<p class="para3">
+					Inpatient treatment program participation points you toward recovery. It gives you the tools you
+                    need to live a drug-free life. Most importantly, it teaches you healthy ways of reacting to stressors.
+                    However, recovery is a long-term process. That’s why the Pillars Recovery inpatient treatment program
+                    in Orange County CA also offers an aftercare program. The goal is a smooth transition from the inpatient
+                    treatment program to independent living. This step looks different for everyone. A step-down in care
+                    is typically the best option. It provides access to many of the amenities and treatments you currently
+                    enjoy. That said, it lets you experience life outside of the facility. If you encounter triggers you
+                    don’t know how to handle, you bring it up with a therapist. This safety net is invaluable for recovery.</p>
+
+		</div>
+		<hr>
+
+		<div class="row">
+			<h2>MAKE TODAY THE DAY THAT CHANGES THE REST OF YOUR LIFE</h2>
+
+				<p class="para3">
+					You don’t have to continue suffering from chemical dependency. Enroll in the Pillars Recovery
+                    inpatient treatment program by connecting with an intake advisor today. Dial 8667891652 now.</p>
+		</div>
+		<hr>
+
+
+	</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+
+
+    {% endblock %}

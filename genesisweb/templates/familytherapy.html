@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 320px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Family Therapy</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">When you seek addiction treatment, your family needs some help with recovery at the same time.
+            Addiction is a “family disease,” because of how it runs in families and affects each member differently.
+            Many problems in communication and other dysfunction exist in families with substance abuse. So family therapy
+            heals these wounds and helps bridge gaps in communication, understanding and mutual respect. According to
+            experts, family issues actually add to addiction problems. These issues also keep substance abuse active,
+            if you do not gain treatment for your condition’s root causes. Your treatment and ultimate recovery sometimes
+            rely on support and participation of your loved ones.</p>
+		</div>
+		<br>
+		<hr>
+
+		<div class="row text-center">
+		<h2>WHAT IS FAMILY THERAPY?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            Family therapy is a group of treatments for your family, in which you work together for healing as part of
+            group sessions. Instead of one individual being treated through counseling or support, the family approaches
+            their recovery as a unit. Methods used for these sessions focus on the connection between family members.
+            Family counseling services also work to create positive changes for everyone involved. This takes place without
+            assigning blame to any one member of the family. In the past, people entered substance abuse treatment alone.
+            They lived in isolation from their family, home and community throughout treatment. But times have changed this,
+            as experts today realize the value of integrating the whole family into treatment. A family therapy program
+            provides major benefits, yet costs little. In fact, the U.S. Department of Health and Human Services and the
+            National Institute on Drug Abuse both back family therapy, recommending its use in any addiction rehab treatment.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>DO YOU NEED FAMILY THERAPY?</h2>
+
+				<p class="para3">
+					There are many reasons to attend therapy with your loved ones. Some of these include:
+•	Someone in the family suffers drug or alcohol addiction
+•	Family members suffered because of the substance abuse
+•	The family needs improved communication skills
+•	Treatment has not worked in the past
+•	Your family problems possibly contribute to the addiction
+When a loved one suffers addiction, many family members feel the rest of the loved ones do not need therapy. But all
+                    families benefit from this counseling, education, and support. Because families are unique, their
+                    treatment meets those unique needs.
+A family therapy program works well with the rest of your treatment plan when you seek rehab and recovery. It complements
+                    individual therapy, group therapy, medication management, and residential treatment. At the same time,
+                    families attending these sessions show their support for their loved one in treatment, as much as they
+                    assert the need for change.
+To participate in family counseling services, you do not have to be a blood relative to the person in treatment. Instead,
+                    anyone close to the person being treated qualifies for participation. This includes partners, friends,
+                    co-workers and others who function as part of the individual’s family.</p>
+		</div>
+		<hr>
+
+		<div class="row">
+		<h2>YOUR WHOLE FAMILY RECOVERS WITH YOU IN FAMILY THERAPY</h2>
+		<p class="para3">
+            A family therapy program and other programs of Pillars Recovery in Orange County, CA help your entire family
+            heal from substance abuse and addiction. This therapy stops the cycle of addiction in many families each year,
+            enabling healthier generations ahead. In addition to family counseling services, programs of Pillars Recovery include:
+•	Withdrawal management
+•	Residential treatment
+•	Partial hospitalization program
+•	Transitional living
+•	Individual therapy and psychotherapy
+•	Group therapy
+•	LGBTQ affirmative therapy
+•	Recreational, art, acupuncture and massage therapies
+Gender-specific treatment at Laguna Beach and Newport Beach locations of Pillars Recovery give you the focus and peer
+            support you need for long-lasting recovery. You also gain family therapy and other therapies critical to
+            ongoing wellness. You can achieve lifelong recovery, especially when your family participates in treatment
+            with you at Pillars Recovery. So call Pillars Recovery now at 866-786-0046 for more information about this
+            important treatment.</p>
+            <br>
+
+		</div>
+		<hr>
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

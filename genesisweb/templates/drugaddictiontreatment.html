@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 18.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 530px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Drug Addiction Treatment</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">Kenya is in the midst of several drug epidemics. The most prominent is the Marijuana
+            epidemic, but cocaine, heroin, and prescription drugs are still a major threat to the American public.
+            Those who struggle with drug addiction may not know where to turn. Luckily, Pillars Recovery offers
+            comprehensive drug addiction treatment for individuals struggling from a range of substance use disorders.</p>
+		</div>
+		<br>
+		<hr>
+		<div class="row text-center">
+		<h2>SIGNS OF DRUG ADDICTION</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            The signs of drug addiction aren’t always obvious. Substances such as painkillers or other prescription
+            medications may fly under the radar because individuals receive those substances from doctors. However,
+            any addiction to drugs is a dangerous one. Every drug produces different physical and mental symptoms.
+            However, most drugs will cause some form of withdrawal. When a person doesn’t use the substance for a
+            period of time, they will experience uncomfortable, flu-like symptoms as a response. These symptoms will
+            drive them to use the drug again in order to feel relief. In addition to withdrawal symptoms and cravings,
+            individuals with drug addictions will also exhibit several behavioral signs. Some of these signs include:
+•	Withdrawal from previously enjoyed activities and hobbies
+•	Straining relationships with loved ones
+•	Poor performance at work or school
+•	Sudden financial problems or asking for money
+A combination of these signs may indicate the need for the best drug addiction treatment center California can offer.</P>
+
+            </div>
+		</div>
+
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>WHAT HAPPENS IN DRUG ADDICTION TREATMENT?</h2>
+
+				<p class="para3">
+					In drug addiction treatment, addiction specialists help you determine which programs will work most
+                    effectively in your favor. Since every addiction is different, our team works hard to understand the
+                    individual and find out how best to treat them. The best drug addiction treatment center California
+                    can offer will provide a range of therapeutic options for drug addiction treatment. At Pillars Recovery,
+                    we offer several addiction treatment programs, including:
+•	Addiction detox program
+•	Drug and Alcohol detox
+•	Residential treatment
+•	Intensive outpatient program
+•	Dual diagnosis treatment
+•	Partial hospitalization program
+After deciding which program will work best for you, trained therapists and nurses help you undergo the detox process
+                    and transition into drug addiction treatment. There, you will receive the drug and mental health
+                    therapy you need to understand your addiction. You will also learn coping mechanisms and
+                    <a href="{% url 'lifeskills' %}"><font style="font-color: blue;">life skills</font></a>
+                    that can help you prevent relapse in long-term recovery.</p>
+
+		</div>
+		<hr>
+
+		<div class="row">
+		<h2>FINDING THE BEST DRUG ADDICTION TREATMENT CENTER KIAMBU CAN OFFER</h2>
+		<p class="para3">
+			When you’re ready to end your addiction to drugs, contact Pillars Recovery Center. We have a dedicated team
+            of addiction treatment specialists who help individuals along their recovery journeys no matter where they are.
+            Whether this is your first time seeking treatment or your fifth, we treat every individual with the same level
+            of professionalism and care.<br>
+            Rely on the best drug addiction treatment center California has to offer and call Pillars Recovery today at 866-789-1652.</p>
+			<br>
+
+		</div>
+		<hr>
+
+        <div class="row">
+			<h2>THERE’S NEVER A BAD TIME TO GET HELP</h2>
+
+				<p class="para3">
+					Pillars Recovery is the prescription drug addiction treatment center California talks about. It features
+                    an intensive detox, rehab, and aftercare setup. Don’t wait until the New Year or some other time to
+                    go after healing. Finally, begin your prescription drug addiction treatment today by calling 866-789-1652 now.</p>
+
+		</div>
+		<hr>
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

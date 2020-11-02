@@ -1,0 +1,299 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Signature Services {% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 230px;
+  padding: 10px;
+  text-align: center;
+}
+#h3para3{
+padding-top: 50px;
+font-size: 26px;
+}
+
+.pfound3-1{
+margin: auto;
+padding-top: 10px;
+font-size: 18px;
+font-family: Segoe UI;
+line-height: 1.8;
+}
+</style>
+
+<div class="bg-text">Life Skills</div>
+
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md bg-light text-dark text-center">
+        <h3 class="font-weight-bold" id="h3para3"><font color="#01A9DB">LIFE SKILLS: </font>EXTENDED RECOVERY SKILLS</h3><br>
+        <p class="pfound3-1" align="right lead">
+            The recovery journey does not end after rehab. In fact, many believe this is where the journey truly begins.
+            After completing drug or alcohol treatment, a person can return to their daily lives of working, going to school,
+            seeing friends and family. While this is a major achievement, it’s also a major transition. Oftentimes,
+            returning to life after rehab means returning to many new relapse triggers, such as party-going friends,
+            outside stresses and pressures, and everyday temptations. Research shows that most relapses occur within the
+            first six months of leaving professional treatment. However, relapse does not have to be a part of your story.
+            With the right, tailored treatment regime in place, and the right life skills in recovery to support it,
+            you can sustain sobriety after rehab. Below, we outline the life skills most essential to a lasting recovery.
+        </p>
+    </div>
+
+    <div class="col-md bg-light">
+    <style>
+.flip-box {
+  background-color: transparent;
+  width: 680px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="{% static 'images/imgmeditation4.jpg' %}" alt="Photo" style="width:680px;height:350px;">
+            </div>
+            <div class="flip-box-back">
+                <h1>Extended Recovery Skills</h1>
+                <h3>Addiction education provides a life-skills based education where we address individual barriers
+                    and obstacles, helping overcome anything that blocks clients from achieving their goals.</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" align="center">
+    <style>
+        h1{
+        padding: 45px;
+        font-size: 38px;
+        color: white;
+        }
+
+        .pfound3{
+        padding-top: 1px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        .pfound3-3{
+        padding-bottom: 30px;
+        padding-right: 100px;
+        font-family: Segoe UI;
+        font-size: 15px;
+        line-height: 1.8;
+        }
+
+        h3{
+        font-family: Segoe UI;
+        font-size: 24px;
+        padding-top: 20px;
+        }
+
+    </style>
+    <div class="col-lg">
+        <h1>OUR APPROACH</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md bg-white">
+
+        <h3><font color="#01A9DB">What is Life Skills?</font></h3>
+        <p class="pfound3">Generally, life skills are defined as psychological and social abilities for adaptive behaviours
+            that enable someone to effectively cope and overcome the challenges of day to day life. As a client-centred
+            facility, we understand that each client has their own unique challenges. This is why we design our treatment
+            to be specific to the clients needs and wants. Addiction education provides a life-skills based education
+            where we address individual barriers and obstacles, helping overcome anything that blocks clients from achieving
+            their goals. Additionally, you also learn how to get and maintain a job to thrive on your own. <br>
+            A “life skill” can be understood as anything useful in your life. Learning how to drive a car,
+            make a resume, use a computer, socialize with others, etc.</p>
+
+        <h3><font color="#01A9DB">What is the Biggest Threat to Recovery?</font></h3>
+        <p class="pfound3">Most people in rehab answer this question with picking up a drink or using drugs. However,
+            those do not represent your biggest threats. Those are consequences of what trips you up most from living
+            a sober life. To truly live sober, you need solid life skills. Therefore, this starts with taking good care
+            of yourself and maintaining your daily responsibilities. Without life skills, you quickly find yourself
+            overwhelmed by daily life. As a result, this brings back your drug cravings and desire to numb your feelings.</p>
+
+        <h3><font color="#01A9DB">Importance of a Daily Routine</font></h3>
+        <p class="pfound3-3">Having healthy hobbies is important for life fulfillment. Your self-esteem comes from your
+            own ability to represent yourself well, whether face-to-face, in conversation, or through your personal
+            talents and interests. Whether you decide to pursue active reading, music, cooking, or other hobbies, these
+            activities will open you to a new social circle. However, social wellness starts with communication skills.
+            You need to mend old relationships and fix or shelve negative influences. When you communicate well, you also
+            welcome quality people into your life, instead of keeping everyone at arm’s length. As a result, this allows
+            people to get to know and respect you. Friendships fill an important void that once led to substance abuse.
+            Therefore, you fill your time and the inner void with people who care about you.</p>
+
+        <h3><font color="#01A9DB">What is the Biggest Threat to Recovery?</font></h3>
+        <p class="pfound3">Most people in rehab answer this question with picking up a drink or using drugs. However,
+            those do not represent your biggest threats. Those are consequences of what trips you up most from living
+            a sober life. To truly live sober, you need solid life skills. Therefore, this starts with taking good care
+            of yourself and maintaining your daily responsibilities. Without life skills, you quickly find yourself
+            overwhelmed by daily life. As a result, this brings back your drug cravings and desire to numb your feelings.</p>
+        <br>
+        <h3><font color="#01A9DB">CATEGORIES OF LIFE SKILLS</font></h3>
+        <br>
+        <h3><font color="#01A9DB">1. Interpersonal Skills and Communication</font></h3>
+        <p class="pfound3">Interpersonal skills include writing skills, verbal skills as well as non-verbal communication
+            skills; such as body language or tone of voice. Listening skills (how we interpret verbal and non-verbal messages)
+            are also essential, needed to provide clarity in what others are communicating  to you. A key factor of interpersonal
+            skills is emotional intelligence, being able to understand and manage our own emotions and the emotions of others
+            is important to successful communication. Other examples include negotiation, persuasion, and influencing others;
+            working to find mutually agreeable situations. Conflict resolution and mediation; working with others to resolve
+            disagreements in a positive manner.</p>
+
+         <h3><font color="#01A9DB">2. Problem-solving and Decision Making</font></h3>
+        <p class="pfound3">There are many styles to decision making, ranging from unfolding, organic, rational, linear etc.
+            The skill is best understood as being able to make decisions under stressful situations and within a brief
+            period of time. Problem solving is defined as a skill in assessing new information, creating new ideas,
+            and providing new solutions also under stressful situations and under pressure. Working with others to identify
+            and define the best course of action is also an important part of problem solving.</p>
+
+                <h3><font color="#01A9DB">3. Creative Thinking and Critical Thinking</font></h3>
+        <p class="pfound3">Creative thinking entails a process of generating original and unique ideas, thoughts, concepts,
+            perspective, and at times providing an unconventional solution to address a challenge or create a change.
+            When you are thinking creatively, you are thinking with intent on defining possibilities, exploring ideas,
+            and developing hypothesis leading to reliable theories. Thinking with intent, creating original thoughts,
+            being open-minded, original in problem solving etc. Critical thinking is the process of analytic thinking,
+            interpretive thinking, synthesizing and evaluating information based on observation, reason, or communication.
+            It is when you think with clarity and logic to make informed decisions or judgments.</p>
+
+                <h3><font color="#01A9DB">4. Self-Awareness</font></h3>
+        <p class="pfound3">By exercising self-awareness, our clients are prepared to have the ability to know when they
+            are about to use and stop the thoughts and behaviours leading to substance use. Diving deeper into the present
+            moment, you will sharpen your mind to be more aware of triggers, emotions, thoughts, and behaviours that may
+            cause harm to the self. By exercising self-awareness you develop the capability to understand physical,
+            emotional and cognitive states allowing you to shift or change your perceptions quickly from negative ones
+            to positive ones. It is your conscious knowledge of character, motives, and desires.</p>
+
+                <h3><font color="#01A9DB">5. Empathy and Sympathy</font></h3>
+        <p class="pfound3">Encompassing significant parts of emotional intelligence. The ability to understand and feel
+            the experiences of others because you yourself have experienced them, best known as empathy, and also having
+            the ability to understand the experiences of others without your own personal experience, attempting to find
+            relevance, this is known as sympathy. These skills best relate to interpersonal skills, by exercising empathy
+            and sympathy, you will better understand the emotional states of others, allowing to establish a deeper
+            connection or bond in the moment. This can lead to greater involvement in the lives of others and others
+            playing a more significant role in your life.</p>
+
+                <h3><font color="#01A9DB">6. Assertiveness and Self-Control</font></h3>
+        <p class="pfound3">The skills needed to say “no” when other people impose thoughts or behaviours on you because
+            they do not align with your attitudes and beliefs. Also, remaining calm when provoked or tempted by others.
+            Being passive, in contrast to assertiveness, is a means of compliance with the behaviours of others and a
+            compromise of your individual rights and self-confidence. Many people adopt a passive response because they
+            feel a strong need to be liked by others. People with this type of behavioural pattern typically do not see
+            themselves as equals and place greater weight on the desires and feelings of others. This is also characteristic
+            of allowing others to take responsibility, having others lead and decide for them. Continuing this behaviour
+            can affect self-confidence, self-efficacy, and may cause feelings of inferiority. By practicing assertiveness
+            and self-control you will go through life in a more confident manner, transferring and generalizing to other
+            parts of life. It will help you create a stable identity.</p>
+
+                <h3><font color="#01A9DB">Conclusion</font></h3>
+        <p class="pfound3">It’s important to note that different life skills apply at different stages in your life.
+            For example, when you are younger, study skills are important; reading, writing, organization, preparation
+            etc. After, employment skills such as interviewing, leadership, resume writing etc. may be very important or
+            even necessary to learn. When you are older you may need to negotiation and bargaining skills when purchasing
+            a car or house. When and if it is time to start a family, parenting skills are fundamental to maintaining a
+            proper household. All of these skills should point to personal development and an understanding of the
+            importance in life-long learning. Addiction Rehab Toronto employs life-skills education in both our treatment
+            facility as well as our Sober Living facility. In Sober Living, we typically utilize vocational life skills
+            such as resume writing, job searching, interview skills, etc. For more information, please call our toll
+            free helpline at +254 (723) 865 – 762.</p>
+
+    </div>
+</div>
+
+<!--<div class="row">
+    <style>
+        .btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+    </style>
+
+</div>-->
+
+{% endblock %}

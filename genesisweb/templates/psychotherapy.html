@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Eating Disorder{% endblock %}
+{% load static %}
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Position text in the left top corner of the page */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+  /*border: 8px solid #f1f1f1;*/
+  position: fixed;
+  top: 22%;
+  left: 13.25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 370px;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="bg-text">Psychotherapy Treatment</div>
+
+
+<!--ABOUT GENESIS SOBER-->
+
+ <style>
+/****Foundations Styling****/
+p.para3{
+margin: auto;
+text-align:left;
+padding-top: 28px;
+padding-left: 75px;
+padding-right:90px;
+align-self:center;
+pointer-events: auto;
+font-size: 16.5px;
+line-height: 1.9;
+align: center;
+}
+.h3para3{
+padding-top: 50px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+h2{
+padding-top: 40px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.btn {
+  background-color: #ddd;
+  border: 1px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #01A9DB;
+  color: white;
+  outline: 2px solid #01A9DB;
+  outline-offset: 5px;
+}
+
+#imgcert1{
+padding: 20px;
+}
+
+ul.d{
+font-size: 15px;
+padding-left: 200px;
+padding-top: 15px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-8 bg-white">
+		<div class="row">
+			<!--<h3 class="h3para3"><i>“Genesis Sober was created to be a refuge for recovery in a world stricken by addiction.”</i></h3>-->
+		<p class="para3">here’s no magic blueprint for the perfect drug rehab program. Everyone has different needs when
+            it comes to addiction recovery. With that said, a few services work wonders for most people. One of the best
+            examples is psychotherapy.</p>
+		</div>
+		<br>
+		<hr>
+
+		<div class="row text-center">
+		<h2>WHAT IS PSYCHOTHERAPY?</h2>
+            <div class="container-fluid">
+
+		<P class="para3"><img src="{% static 'images/gym1.jpg' %}" alt="Photo 1" style="width:400px; height:250px; float:right;">
+            Psychotherapy, which people refer to as just talk therapy or counseling, helps people with an array of mental
+            illnesses. Since addiction is a mental disorder, therapy works wonders with managing addiction. In either case,
+            it controls or eliminates troubling symptoms that stem from disorders and emotions. Dealing with negative
+            emotions can assist people in improving their overall well-being.</P>
+
+            </div>
+		</div>
+
+
+		<div class="row"></div>
+
+		<hr>
+
+		<div class="row">
+			<h2>WHAT ARE SOME KEY AREAS IN WHICH TALK THERAPY HELPS PEOPLE?</h2>
+
+				<p class="para3">
+					Psychotherapy can help people on a number of levels and with a variety of problems. For example, it’s
+                    important for dealing with trauma. It can also help people deal with specific disorders such as anxiety
+                    and depression. However, how does dealing with these problems help people overcome addiction? After all,
+                    most experts agree that a psychotherapy treatment program is a good option for people with this disease.
+                    Counseling helps because it addresses the root cause of addiction, which could be a mental health illness.
+                    Most people don’t aim to abuse drugs. It just kind of happens. Typically, drug abuse is the result of
+                    another underlying problem. For example, people who struggle with trauma or depression don’t always
+                    seek professional help. Instead, they self-medicate in order to feel normal. However, taking drugs
+                    only makes them feel normal for a short period of time. In order to get lasting relief, they have to
+                    deal with the underlying issues.</p>
+		</div>
+		<hr>
+
+		<div class="row">
+		<h2>IS TALK THERAPY ENOUGH TO OVERCOME ADDICTION?</h2>
+		<p class="para3">
+           Unfortunately, a psychotherapy treatment program isn’t enough on its own to help people overcome addiction.
+            However, it’s an essential part of every addiction treatment program. The ideal rehab center will combine
+            counseling with other forms of treatment. For example, before people can even start talk therapy, they have
+            to detox from the drugs. This process is essential because it creates a stable platform on which they can
+            build their recovery. Also, it’s helpful if people engage in some kind of recreational therapy. This treatment
+            method improves physical and mental issues. It gets people involved in outdoor activities that can become
+            hobbies after rehab. Developing healthy hobbies is vital for filling idle time when people transition into
+            their normal lives after treatment. This result is significant because most people relapse when they don’t
+            have anything to do. They can develop cravings, or their minds can wander onto how they felt when they used
+            drugs. Without an activity to keep them busy, they often start using drugs again.</p>
+            <br>
+
+		</div>
+		<hr>
+
+		<div class="row">
+		<h2>REACH OUT TO GENESIS SOBER TODAY</h2>
+		<p class="para3">
+           Do you need a psychotherapy treatment program to help you overcome addiction? The truth is that not all rehab
+            centers offer talk therapy. Thankfully, Pillars Recovery understands how important counseling is to your
+            treatment. For that reason, we provide several types of psychotherapy and other services such as:
+•	Residential treatment
+•	Group therapy
+•	Transitional living
+•	Individual therapy
+•	Family therapy
+Beyond offering rehab services, we also offer on-site detox. We know that detox is an important part of addiction
+            treatment. Without it, you can’t begin to focus on and address the source of your problem. Thankfully, we
+            offer both so that we can help you overcome drug addiction from start to finish.
+Don’t waste your time with rehab centers that don’t use an array of therapy services. Find out how psychotherapy can
+            help you overcome addiction and its underlying cause. Reach out to Pillars Recovery today at 866-789-1652
+            to start your treatment program and journey toward recovery.</p>
+            <br>
+
+		</div>
+		<hr>
+
+
+</div>
+
+	<!--Video section
+			<div class="container">
+			<video width="320" height="240" controls autoplay>
+  			<source src="movie.mp4" type="video/mp4">
+			</video>
+			</div>
+			-->
+
+	<div class="col-4 bg-warning" align="center">
+		<div class="row">
+			<h2>TAKE YOUR JOURNEY WITH GENESIS SOBER TODAY</h2>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">(+254) 723-865-762</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:150px;"><a href="{% url 'learnmore' %}"><button class="btn">Contact Us</button></a></p><br>
+		</div>
+		<div class="row">
+			<p style="padding-left:120px;"><a href="{% url 'learnmore' %}"><button class="btn">Verify Your Insurance</button></a></p><br>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>EXPERIENCE OUR MEDICATION ASSISTED TREATMENT PROGRAM TODAY</h2>
+			<p style="padding-left:120px;"><a href="{% url 'medicationassisted' %}"><button class="btn">Learn About MAT Now</button></a></p>
+		</div>
+		<hr>
+		<div class="row">
+			<h2>Get Directions to Our Facility</h2>
+			<!--<iframe src="https://www.google.com/maps/d/embed?mid=1hzQawTwjZKK1e7vvkjNprPSdOAg" width="640" height="480"></iframe>-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.797748385703!2d36.78625794336728!3d-1.0874561095165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3130f232d969%3A0xfafcaec7c2726da8!2sGenesis%20Sober%20Community!5e0!3m2!1sen!2ske!4v1572416517340!5m2!1sen!2ske" width="460" height="300" frameborder="4" style="border:4;"  allowfullscreen=""></iframe>
+		</div>
+		<hr>
+		<div class="row">
+			<h3>Adverts Section</h3><br>
+			<img src="{% static 'images/logo/advert7.gif' %}" style="width:500px; height:1028px;"><br>
+			<img src="{% static 'images/logo/advert8.gif' %}" style="width:480px; height:250px;">
+		</div>
+	</div>
+
+</div>
+
+
+    {% endblock %}

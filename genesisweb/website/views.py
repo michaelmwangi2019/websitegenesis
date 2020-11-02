@@ -62,18 +62,29 @@ def testview(request):
     return render(request, 'codetesting.html')
 
 
-def blogview(request):
+def alcoholtreatmentview(request):
 
-    return render(request, 'blog.html')
-
-def contactusview(request):
-
-    return render(request, 'contactus.html')
+    return render(request, 'alcoholtreatment.html')
 
 
-def treatmentview(request):
+def partialhospitalizationview(request):
 
-    return render(request, 'treatment.html')
+    return render(request, 'partialhospitalization.html')
+
+
+def addictiontherapyview(request):
+
+    return render(request, 'addictiontherapy.html')
+
+
+def addictiontreatmentprogramview(request):
+
+    return render(request, 'addictiontreatmentprogram.html')
+
+
+def dischargeplanningview(request):
+
+    return render(request, 'dischargeplanning.html')
 
 
 def aboutusview(request):
@@ -81,24 +92,75 @@ def aboutusview(request):
     return render(request, 'aboutus.html')
 
 
-def detoxview(request):
+def residentialtreatmentview(request):
 
-    return render(request, 'detox.html')
-
-
-def locationsview(request):
-
-    return render(request, 'locations.html')
+    return render(request, 'residentialtreatment.html')
 
 
-def blogview(request):
+def marijuanatreatmentview(request):
 
-    return render(request, 'blog.html')
+    return render(request, 'marijuanatreatment.html')
+
+
+def herointreatmentview(request):
+
+    return render(request, 'herointreatment.html')
+
+
+def opioidtreatmentview(request):
+
+    return render(request, 'opioidtreatment.html')
+
+
+def transitionallivingview(request):
+
+    return render(request, 'transitionalliving.html')
+
+
+def painkillertreatmentview(request):
+
+    return render(request, 'painkillertreatment.html')
+
+
+def medicationassistedview(request):
+
+    return render(request, 'medicationassisted.html')
+
+
+def inpatienttreatmentview(request):
+
+    return render(request, 'inpatienttreatment.html')
+
+
+def prescriptiondrugview(request):
+
+    return render(request, 'prescriptiondrug.html')
+
+
+def familytherapyview(request):
+
+    return render(request, 'familytherapy.html')
+
+
+def psychotherapyview(request):
+
+    return render(request, 'psychotherapy.html')
+
+
+def experientialtherapyview(request):
+
+    return render(request, 'experientialtherapy.html')
 
 
 def signatureservicesview(request):
 
     return render(request, 'signatureservices.html')
+
+
+def lifeskillsview(request):
+
+    return render(request, 'lifeskills.html')
+
 
 def signatureservices2view(request):
 
@@ -118,6 +180,16 @@ def traumaresilienceview(request):
 def drugandalcoholdetoxview(request):
 
     return render(request, 'drugandalcoholdetox.html')
+
+
+def drugaddictiontreatmentview(request):
+
+    return render(request, 'drugaddictiontreatment.html')
+
+
+def substanceabusetreatmentview(request):
+
+    return render(request, 'substanceabusetreatment.html')
 
 
 def galleryview(request):

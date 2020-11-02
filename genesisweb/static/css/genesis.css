@@ -140,6 +140,9 @@ border-radius: 20px;
 
 
 /******NAV BAR*****/
+navbar-nav{
+font-size: 17px;
+}
 
 li:last-child {
   border-right: none;
